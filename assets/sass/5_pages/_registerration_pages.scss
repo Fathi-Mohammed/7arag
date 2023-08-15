@@ -42,6 +42,10 @@
   padding-top: 70px;
   padding-bottom: 77px;
   position: relative;
+  background-image: url(../images/shapes/registeration_page_background_04.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @include sm {
     padding: 60px 0;
@@ -59,24 +63,22 @@
 
   
 
-  &::after {
-    content: url(../images/shapes/registeration_page_background_01.png);
-    inset-inline-start: 0;
-  }
+  // &::after {
+  //   content: url(../images/shapes/registeration_page_background_01.png);
+  //   inset-inline-start: 0;
 
-  @include sm {
-    &::after {
-      content: url(../images/shapes/registeration_page_background_03.png);
-      inset-inline-start: 0;
-      bottom: unset !important;
-      top: 0 !important;
-    }
-  }
+  //   @include sm {
+  //       content: url(../images/shapes/registeration_page_background_03.png);
+  //       inset-inline-start: 0;
+  //       bottom: unset !important;
+  //       top: 0 !important;
+  //   }
+  // }
 
-  &::before {
-    content: url(../images/shapes/registeration_page_background_02.png);
-    inset-inline-end: 0;
-  }
+  // &::before {
+  //   content: url(../images/shapes/registeration_page_background_02.png);
+  //   inset-inline-end: 0;
+  // }
 
   &.modify_data_page {
     padding-bottom: 190px;

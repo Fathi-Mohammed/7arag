@@ -78,6 +78,10 @@
     width: 30%;
     list-style: none;
 
+    @include md {
+      width: 100%;
+    }
+
     @include sm {
       text-align: center;
     }
