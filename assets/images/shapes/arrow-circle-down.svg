@@ -1,0 +1,6 @@
+<svg id="vuesax_linear_arrow-up" data-name="vuesax/linear/arrow-up" xmlns="http://www.w3.org/2000/svg" width="13.139" height="13.139" viewBox="0 0 13.139 13.139">
+  <g id="arrow-up">
+    <path id="Vector" d="M8.672,0,5.1,3.569a1.087,1.087,0,0,1-1.533,0L0,0" transform="translate(2.234 4.9)" fill="none" stroke="#7c7c7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-2" data-name="Vector" d="M0,13.139H13.139V0H0Z" transform="translate(13.139 13.139) rotate(180)" fill="none" opacity="0"/>
+  </g>
+</svg>

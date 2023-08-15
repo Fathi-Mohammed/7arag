@@ -1,0 +1,54 @@
+.sector_block__ {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: $secondaryBorderRadius;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+
+  @include xs {
+    padding: 15px;
+    border-radius: $mainBorderRadius;
+  }
+
+  .icon__ {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-inline-end: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    @include xs {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .title__ {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: $headingMainColor;
+
+    @include xs {
+      font-size: 16px;
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+
+    .icon__ {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

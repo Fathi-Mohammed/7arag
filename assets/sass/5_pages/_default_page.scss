@@ -1,0 +1,43 @@
+.default_page__ {
+  min-height: 50vh;
+}
+
+.sectors_page__,
+.sectors_divisions_page__,
+.common_questions_page__,
+.divisions_page,
+.add_deal_page,
+.consultation_request_page,
+.contact_page,
+.notifications_page__,
+.favorite_product_page__,
+.my_product_page__,
+.chat_page,
+.add_product_page,
+.terms_and_conditions_page__ {
+  padding: 50px 0;
+}
+
+.common_questions_page__ {
+  padding-top: 26px;
+}
+
+.section__ {
+  border-radius: $secondaryBorderRadius;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(#000, 0.04);
+  margin-bottom: 30px;
+
+  .head__ {
+    padding: 25px 20px 15px;
+    border-bottom: 1px solid $borderColor;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .site_head__ {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+}

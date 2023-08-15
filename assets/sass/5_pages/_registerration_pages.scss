@@ -1,0 +1,130 @@
+.form_label_for_info__ {
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .head__,
+  .link__ {
+    font-size: 15px;
+    color: $headingSecondaryColor;
+    margin-bottom: 0;
+  }
+
+  .link__ {
+    transition: 0.5s;
+    margin-inline-start: 10px;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+
+  &.border_wrapper__ {
+    border: 1px solid $secondaryColor;
+    border-radius: $mainBorderRadius;
+    padding: 13px 10px;
+  }
+
+  &.signup_wrapper__ {
+    justify-content: center;
+    margin-top: 35px;
+  }
+}
+
+.form_label_for_info_group__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registeration_page__ {
+  padding-top: 70px;
+  padding-bottom: 77px;
+  position: relative;
+
+  @include sm {
+    padding: 60px 0;
+  }
+
+  &::after,
+  &::before {
+    display: block;
+    position: absolute;
+    width: 847px;
+    height: 265px;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  
+
+  &::after {
+    content: url(../images/shapes/registeration_page_background_01.png);
+    inset-inline-start: 0;
+  }
+
+  @include sm {
+    &::after {
+      content: url(../images/shapes/registeration_page_background_03.png);
+      inset-inline-start: 0;
+      bottom: unset !important;
+      top: 0 !important;
+    }
+  }
+
+  &::before {
+    content: url(../images/shapes/registeration_page_background_02.png);
+    inset-inline-end: 0;
+  }
+
+  &.modify_data_page {
+    padding-bottom: 190px;
+  }
+}
+
+.code_shapes__ {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  direction: ltr;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  gap: 9px;
+
+  .code-input {
+    text-align: center;
+    width: 70px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $mainBorderRadius;
+    border: 1px solid #dcdcdc;
+    font-size: 28px;
+    color: $secondaryColor;
+    font-family: sans-serif;
+    outline: none;
+    transition: 0.5s;
+
+    @include xs {
+      width: 60px;
+    }
+
+    @include xxs {
+      width: 40px;
+    }
+
+    &.active {
+      color: $orangeColor;
+    }
+  }
+}
+
+.verification_section_content__ {
+  .buttons_group__ {
+    justify-content: space-between;
+  }
+}

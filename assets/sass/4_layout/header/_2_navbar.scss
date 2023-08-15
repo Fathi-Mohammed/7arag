@@ -1,0 +1,253 @@
+// nav-om -large sizes
+.nav_wrapper {
+  background-color: $primaryColor;
+}
+
+.nav-om {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  .close-button__,
+  .nav_logo__ {
+    display: none;
+  }
+
+  .sing-up-blocks {
+    display: none;
+  }
+
+  .nav-list-om {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: space-between;
+    gap: 34px;
+    // margin-inline-end: 78px;
+
+    @include md {
+      margin-inline-end: 40px;
+      gap: 10px;
+    }
+
+    > li {
+      // &:not(:last-child) {
+      //   margin-inline-end: 33px;
+
+      //   @include md {
+      //     margin-inline-end: 15px;
+      //   }
+      // }
+      flex-shrink: 0;
+
+      > a {
+        font-size: 16px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: 0.5s;
+        padding: 20px 0;
+        position: relative;
+        gap: 20px;
+
+        @include md {
+          gap: 10px;
+        }
+
+        .icon__ {
+          width: 28px;
+          height: 28px;
+          flex-shrink: 0;
+
+          path {
+            stroke: #fff;
+            transition: 0.5s;
+          }
+        }
+
+        &:hover {
+          color: $orangeColor;
+
+          .icon__ {
+            path {
+              stroke: $orangeColor;
+              fill: $orangeColor;
+            }
+          }
+        }
+      }
+
+      // &.active {
+      //   > a {
+      //     color: $secondaryColor;
+      //     font-weight: 500;
+
+      //     &::after {
+      //       width: 100%;
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
+// nav-om  sm - xs size
+@include sm {
+  .nav-om {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 80%;
+    z-index: 1111;
+    padding: 20px;
+    transition: 0.5s;
+    overflow-y: auto;
+    display: block;
+    padding-top: 90px;
+    background-color: $primaryColor;
+
+    .nav_logo__ {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      max-width: 150px;
+
+      img {
+        max-width: 100%;
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    .close-button__ {
+      display: block;
+    }
+    
+
+    .bavbar-logo-om {
+      display: flex;
+      max-width: 100%;
+      justify-content: center;
+      margin-bottom: 50px;
+      filter: brightness(0) invert(1);
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    @include dir {
+      left: -100%;
+      right: unset;
+    }
+
+    &.active-menu {
+      right: 0;
+
+      @include dir {
+        left: 0;
+        right: unset;
+      }
+    }
+
+    .sing-up-blocks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      @include xxs {
+        justify-content: flex-start;
+        gap: 0;
+      }
+      
+      a {
+        color: #fff;
+        padding: 10px 25px;
+        display: block;
+        margin-bottom: 20px;
+        font-size: 16px;
+
+        @include xxs {
+          margin: 0;
+          width: 100%;
+
+          &:nth-child(odd) {
+              background-color: rgba(#fff, 0.2);
+          }
+        }
+        
+        .icon__ {
+          path {
+            stroke: #fff;
+            transition: 0.5s;
+          }
+        }
+
+        &:hover {
+          color: $orangeColor;
+
+          .icon__ {
+            path {
+              stroke: $orangeColor;
+            }
+          }
+        }
+      }
+    }
+
+    .nav-list-om {
+      display: block;
+      order: 3;
+      width: 100%;
+      margin: 0;
+
+      @include dir {
+        margin: 0;
+      }
+
+      > li {
+        margin-inline-end: 0;
+
+        &:not(:last-child) {
+          margin-inline-end: 0;
+        }
+
+        > a {
+          color: #fff;
+          padding: 10px 25px;
+          display: block;
+          margin: 0;
+
+          &::after {
+            content: none;
+            display: none;
+          }
+
+          @include dir {
+            margin: 0;
+          }
+
+          &:hover {
+            background-color: transparent;
+            color: $orangeColor;
+          }
+        }
+
+        &:nth-child(odd) {
+          > a {
+            background-color: rgba(#fff, 0.2);
+          }
+        }
+      }
+    }
+  }
+}

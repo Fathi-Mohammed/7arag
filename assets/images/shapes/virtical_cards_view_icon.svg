@@ -1,0 +1,11 @@
+<svg id="Group_10938" data-name="Group 10938" xmlns="http://www.w3.org/2000/svg" width="22.222" height="22.222" viewBox="0 0 22.222 22.222">
+  <g id="row-vertical_linear" data-name="row-vertical/linear" transform="translate(0)">
+    <g id="vuesax_linear_row-vertical" data-name="vuesax/linear/row-vertical">
+      <g id="row-vertical">
+        <path id="Vector" d="M16.574,0H1.944C.556,0,0,.593,0,2.065V5.806C0,7.278.556,7.87,1.944,7.87h14.63c1.389,0,1.944-.593,1.944-2.065V2.065C18.519.593,17.963,0,16.574,0Z" transform="translate(1.852 12.5)" fill="none" stroke="#c7c7c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Vector-2" data-name="Vector" d="M16.574,0H1.944C.556,0,0,.593,0,2.065V5.806C0,7.278.556,7.87,1.944,7.87h14.63c1.389,0,1.944-.593,1.944-2.065V2.065C18.519.593,17.963,0,16.574,0Z" transform="translate(1.852 1.852)" fill="none" stroke="#c7c7c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Vector-3" data-name="Vector" d="M0,0H22.222V22.222H0Z" fill="none" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

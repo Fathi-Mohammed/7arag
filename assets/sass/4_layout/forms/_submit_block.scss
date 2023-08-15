@@ -1,0 +1,225 @@
+.submit-button__ {
+  color: #fff;
+  background: $primaryColor;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.5s;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  padding: 0 30px;
+  height: 55px;
+  width: max-content;
+  border-radius: $mainBorderRadius;
+  min-width: 180px;
+
+  .icon__ {
+    flex-shrink: 0;
+    margin-inline-start: 5px;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    background-color: rgba($primaryColor, 0.9);
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &.centered__ {
+    margin: 0 auto;
+    min-width: 236px;
+  }
+
+  &.full_width {
+    width: 100%;
+  }
+
+  &.secondaryColorButton {
+    background-color: $secondaryColor;
+
+    &:hover {
+      background-color: rgba($secondaryColor, 0.9);
+    }
+  }
+
+  &.cancellation_button {
+    background-color: #fff;
+    color: $headingSecondaryColor;
+    border: 1px solid $borderColor;
+
+    &:hover {
+      background-color: rgba($headingSecondaryColor, 0.05);
+    }
+  }
+
+  &.like_button__ {
+    min-width: 100px;
+    height: 40px;
+    background-color: rgba($primaryColor, 0.1);
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+
+    @include sm {
+      min-width: 192.6px;
+    }
+
+    .icon__ {
+      margin: 0;
+      margin-inline-end: 5px;
+    }
+
+    &:hover {
+      background-color: $primaryColor;
+      color: #fff;
+
+      .icon__ {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+  }
+
+  &.full_width__ {
+    width: 100%;
+  }
+
+  &.fixed_size__ {
+    min-width: 140px;
+  }
+
+  &.full_width_sm__ {
+    @include sm {
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &.modify_button__ {
+    border-radius: 5px;
+    border: 1px solid $secondaryColor;
+    color: $secondaryColor;
+    height: 32px;
+    min-width: 87px;
+
+    &:hover {
+      background-color: rgba($secondaryColor, 0.1);
+    }
+  }
+
+  &.delete_button__ {
+    background-color: $redColor;
+
+    &:hover {
+      background-color: rgba($redColor, 0.9);
+    }
+  }
+
+  &.call_button {
+    font-size: 12px;
+    min-width: 95px;
+    height: 40px;
+    background-color: #e6f9fa;
+    border-radius: 5px;
+    border: 1px solid #22b1bf;
+    color: #22b1bf;
+
+    .phone_icon {
+      margin-inline-end: 11px;
+      fill: #22b1bf;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #22b1bf;
+
+      .phone_icon {
+        fill: #fff;
+      }
+
+      .phone_icon {
+        fill: #fff;
+      }
+    }
+  }
+
+  &.chat_delete__ {
+    font-size: 12px;
+    min-width: 178px;
+    background-color: rgba($mainRedColor, 0.07);
+    border-radius: $mainBorderRadius;
+    color: $mainRedColor;
+    gap: 18px;
+
+    @include xxs {
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: rgba($mainRedColor, 0.17);
+    }
+  }
+
+  &.send_message {
+    background-color: $orangeColor;
+    min-width: 81px;
+    
+    &:hover {
+      background-color: rgba($orangeColor, 0.8);
+    }
+  }
+
+  &.send_code_again__ {
+    background-color: transparent;
+    color: $primaryColor;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-size: 13px;
+    gap: 10px;
+
+    &::before {
+      content: url(../images/shapes/rotate.svg);
+      width: 19px;
+      height: 19px;
+      display: block;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.delete_file {
+    padding: 0;
+    min-width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mainRedColor;
+
+    .icon__ {
+      margin: 0;
+    }
+  }
+
+  &.add_product_button {
+    margin-top: 13px;
+    width: 372px;
+    margin-inline-start: auto;
+
+    @include md {
+      width: 100%;
+    }
+  }
+}

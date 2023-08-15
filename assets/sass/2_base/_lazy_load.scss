@@ -1,0 +1,13 @@
+/*loading*/
+
+/*lazyload*/
+.loading-omd {
+  background-color: #fafafa !important;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    opacity: 0 !important;
+    filter: blur(40px);
+  }
+}

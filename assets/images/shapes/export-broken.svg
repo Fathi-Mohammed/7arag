@@ -1,0 +1,11 @@
+<svg id="export_broken" data-name="export/broken" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="vuesax_broken_export" data-name="vuesax/broken/export">
+    <g id="export">
+      <path id="Vector" d="M10,0A10,10,0,1,0,20,10" transform="translate(2 2)" fill="none" stroke="#5622c8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-2" data-name="Vector" d="M0,4.64,4.64,0" transform="translate(16.56 2.8)" fill="none" stroke="#5622c8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-3" data-name="Vector" d="M0,1,1,0" transform="translate(13 10)" fill="none" stroke="#5622c8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-4" data-name="Vector" d="M4.83,4.83V0H0" transform="translate(17.17 2)" fill="none" stroke="#5622c8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

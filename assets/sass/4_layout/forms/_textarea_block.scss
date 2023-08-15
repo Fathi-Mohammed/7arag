@@ -1,0 +1,18 @@
+.textarea-om {
+  height: 144px;
+  resize: none;
+  width: 100%;
+  border: 1px solid $borderColor;
+  border-radius: $mainBorderRadius;
+  padding: 20px 37px;
+  font-size: 13px;
+
+
+  &.max_height_textarea_ {
+    height: 159px;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

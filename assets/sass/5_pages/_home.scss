@@ -1,0 +1,45 @@
+.intro_section {
+  padding: 35px 0 42px;
+
+  .intro_slider_wrapper {
+    position: relative;
+    
+    .swiper-wrapper{
+      .swiper-slide {
+        cursor: pointer;
+      }
+      .figure__ {
+        padding-bottom: 23.08%;
+        border-radius: $mainBorderRadius;
+        overflow: hidden;
+      }
+    }
+    
+    .swiper-pagination {
+      position: absolute;
+      bottom: -5px;
+      inset-inline-start: 26px;
+    }
+  }
+}
+
+
+.products_seller_section {
+  padding: 16px 0 100px;
+
+  .products_seller_content {
+    background-color: $mainBackgroundColor;
+    border-radius: 10px;
+    padding: 45px 30px 50px;
+  }
+
+  .slider_wrapper {
+    position: relative;
+
+    .arrow-sec{
+      position: absolute;
+      bottom: -48px;
+      inset-inline-end: 70px;
+    }
+  }
+}

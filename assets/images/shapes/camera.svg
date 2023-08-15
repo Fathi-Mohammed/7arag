@@ -1,0 +1,8 @@
+<svg id="vuesax_linear_camera" data-name="vuesax/linear/camera" xmlns="http://www.w3.org/2000/svg" width="37.32" height="37.32" viewBox="0 0 37.32 37.32">
+  <g id="camera">
+    <path id="Vector" d="M7.026,31.1h16.3c4.292,0,6-2.628,6.2-5.831l.809-12.844A5.836,5.836,0,0,0,24.5,6.22a2.555,2.555,0,0,1-2.255-1.384l-1.12-2.255A5.133,5.133,0,0,0,16.962,0H13.4A5.136,5.136,0,0,0,9.218,2.581L8.1,4.836A2.555,2.555,0,0,1,5.844,6.22a5.836,5.836,0,0,0-5.831,6.2L.821,25.269C1.008,28.472,2.734,31.1,7.026,31.1Z" transform="translate(3.486 3.11)" fill="none" stroke="#7c7c7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0H4.665" transform="translate(16.328 12.44)" fill="none" stroke="#7c7c7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-3" data-name="Vector" d="M5.054,10.108A5.054,5.054,0,1,0,0,5.054,5.064,5.064,0,0,0,5.054,10.108Z" transform="translate(13.606 17.883)" fill="none" stroke="#7c7c7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-4" data-name="Vector" d="M0,0H37.32V37.32H0Z" fill="none" opacity="0"/>
+  </g>
+</svg>

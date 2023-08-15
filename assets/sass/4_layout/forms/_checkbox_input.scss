@@ -1,0 +1,57 @@
+// .checkbox-om {
+//     cursor          : pointer;
+//     margin          : 0;
+//     padding         : 0;
+//     width           : 16px;
+//     height          : 16px;
+//     background-color: #fff;
+//     border          : 1px solid #e8e8e8;
+//     opacity         : 0.4;
+
+//     &:checked {
+//         opacity: 1;
+//     }
+// }
+
+.checkbox-group-om {
+  display: flex;
+
+  .checkbox-om {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &:checked {
+      +.checkbox-label-om {
+        background-color: $secondaryColor;
+        border-color: $secondaryColor;
+        background-image: url(../images/shapes/checkbox.svg);
+      }
+    }
+  }
+
+  .checkbox-label-om {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-inline-end: 6px;
+    flex-shrink: 0;
+  }
+
+  .label__ {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: $headingMainColor;
+    cursor: pointer;
+  }
+}

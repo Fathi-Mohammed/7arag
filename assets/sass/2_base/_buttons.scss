@@ -1,0 +1,54 @@
+.button__ {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.5s;
+
+  &.modify_button__ {
+    color: #fff;
+    min-width: 50%;
+    background-color: $headingMainColor;
+    border: none !important;
+    border-radius: unset !important;
+    
+    &:hover {
+      background-color: rgba($headingMainColor, 0.9);
+      text-decoration: none;
+    }
+  }
+  
+  &.delete_button__ {
+    min-width: 50%;
+    background-color: $redColor;
+    border-radius: unset !important;
+    border: none !important;
+    color: #fff;
+    
+    &:hover {
+      background-color: rgba($redColor, 0.8);
+    }
+  }
+  
+}
+
+.buttons_group__ {
+  &.flex_group__ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.group_gap__ {
+      gap: 15px;
+    }
+
+    &.none_margin__ {
+      margin: 0;
+    }
+  }
+}

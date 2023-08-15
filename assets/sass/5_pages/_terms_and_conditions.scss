@@ -1,0 +1,44 @@
+
+.terms_and_conditions_block {
+  background-color: #fff;
+
+
+
+  .section_head {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-inline-start: 25px;
+    color: $headingMainColor;
+  }
+
+  .sub_title__ {
+    font-size: 13px;
+    color: $paragraphMainColor;
+    margin-bottom: 30px;
+    margin-inline-start: 15px;
+
+  }
+
+  .parag_head {
+    font-size: 15px;
+    font-weight: 600;
+    color: $headingMainColor;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+
+    &::before {
+      content: url(../images/shapes/terms_parag_head.svg);
+    }
+  }
+
+  .parag__ {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: $paragraphMainColor;
+    line-height: 1.8;
+  }
+}

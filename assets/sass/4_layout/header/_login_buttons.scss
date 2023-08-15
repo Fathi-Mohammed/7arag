@@ -1,0 +1,54 @@
+.log_in_blocks {
+  display: flex;
+  align-items: center;
+
+  @include sm {
+    display: block;
+  }
+
+  .login_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 48px;
+    min-width: 162px;
+    border-radius: $mainBorderRadius;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-color: transparent;
+    background-color: transparent;
+    color: $headingMainColor;
+    min-width: max-content;
+    padding: 0;
+    transition: 0.5s;
+
+    .icon__ {
+      font-size: 24px;
+    }
+
+    @include sm {
+      border-radius: 0;
+      margin-bottom: 0;
+      height: 40px;
+      min-width: 70px;
+      font-size: 12px;
+      padding: 3px 10px;
+    }
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  &.nav_sign_block__ {
+    display: none;
+
+    @include sm {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+}

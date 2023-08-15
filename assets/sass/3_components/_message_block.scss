@@ -1,0 +1,39 @@
+.message__ {
+  box-shadow: 0 0 30px rgba($shadowColor, 0.16);
+  padding: 21px 16px;
+  padding-inline-start: 27px;
+  max-width: 372px;
+  border-radius: $mainBorderRadius;
+  margin-bottom: 13px;
+  
+  .message_content {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 1.7;
+    color: $paragraphMainColor;
+  }
+
+  .message_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &.received_message__ {
+    margin-inline-start: auto;
+    background-color: $primaryColor;
+    box-shadow: unset;
+    color: #fff;
+    
+    .message_content {
+      color: #fff;
+    }
+    
+    .message_info{
+      .time__ {
+        margin-inline-start: auto;
+      }
+    }
+  }
+}

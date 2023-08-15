@@ -1,0 +1,122 @@
+.modal {
+  .close {
+    position: absolute;
+    top: 5px;
+    inset-inline-start: 10px;
+  }
+
+  .modal-content {
+    padding: 50px;
+    border-radius: $mainBorderRadius;
+    text-align: center;
+  }
+}
+
+.modal-dialog {
+  max-width: 489px;
+}
+
+
+
+
+
+.modal_block__ {
+  .figure__ {
+    padding-bottom: 0;
+    width: 34px;
+    height: 34px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    .img-om {
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: $headingMainColor;
+  }
+
+  .sub_title__ {
+    font-size: 13px;
+    margin-bottom: 23px;
+    color: $paragraphMainColor;
+  }
+
+  .close_modal_button {
+    position: absolute;
+    top: -22.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #5E676A;
+    cursor: pointer;
+
+    .figure__ {
+      margin: 0;
+    }
+  }
+
+
+  // .links_group {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin-top: 40px;
+  //   font-size: 16px;
+
+  //   .submit-button__ {
+  //     margin: 0;
+  //     width: 160px;
+  //     text-decoration: none;
+
+
+  //     .icon__ {
+  //       margin-inline-end: 5px;
+  //       margin-inline-start: 0;
+  //     }
+
+  //     &.deal_page_link,
+  //     &.try_again_link {
+  //       background-color: $secondaryColor;
+
+  //       &:hover {
+  //         color: #fff;
+  //         background-color: rgba($secondaryColor, 0.9);
+  //       }
+  //     }
+
+
+  //     &.deal_page_link {
+  //       margin-inline-start: 20px;
+  //     }
+
+  //     &.try_again_link {
+  //       margin-top: -20px;
+  //       padding: 0 10px;
+  //     }
+
+  //     &:hover {
+  //       color: #fff;
+  //       background-color: rgba($secondaryColor, 0.9);
+  //     }
+  //   }
+
+  // }
+}
+
+.delete_modal {
+  .figure__ {
+    width: 25px;
+    height: 27.5px;
+  }
+}

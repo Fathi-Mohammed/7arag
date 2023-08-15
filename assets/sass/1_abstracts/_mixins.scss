@@ -1,0 +1,70 @@
+// media
+@mixin xxs {
+  @media only screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin dir {
+  html[dir="#{$dir}"] & {
+    @content;
+  }
+}
+
+@mixin gr_background {
+  background: $secondaryColor;
+  background: linear-gradient(90deg, $primaryColor 0%, $secondaryColor 100%);
+  background-size: 100%;
+  color: #fff;
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    background-color: $primaryColor;
+    background-position: 100%;
+    background-size: 150%;
+    color: #fff;
+  }
+}
+
+@mixin after_gr_background {
+  position: relative;
+
+  &::after {
+    content: "";
+    background: $secondaryColor;
+    background: linear-gradient(90deg, $primaryColor 0%, $secondaryColor 100%);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}

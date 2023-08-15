@@ -1,0 +1,82 @@
+.select__ {
+  width: 100% !important;
+  margin-bottom: 0;
+
+  // button
+  .dropdown-toggle {
+    border-radius: $mainBorderRadius;
+    border: solid 1px $borderColor !important;
+    background-color: #fff;
+    height: 55xpx;
+    padding: 15px 30px !important;
+    padding-inline-start: 35px !important;
+    font-size: 14px;
+    font-stretch: normal;
+    color: $paragraphMainColor;
+    outline: none !important;
+
+    &::after {
+      content: url(../images/shapes/arrow-circle-left.svg);
+      margin: 0;
+      margin-right: 0;
+      display: inline-block;
+      vertical-align: middle;
+      border: none !important;
+      margin-top: 0;
+      margin-inline-end: 0;
+      height: 24px ;
+    }
+
+    .filter-option {
+      margin-inline-end: 15px;
+      text-align: right;
+      color: $headingMainColor;
+
+      @include dir {
+        text-align: left;
+      }
+    }
+
+    &:focus,
+    &:active {
+      background-color: #fff !important;
+      border-color: $primaryColor !important;
+      color: $headingMainColor !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  &.show {
+    > .btn-light.dropdown-toggle {
+      background-color: #fff !important;
+      border-color: $primaryColor !important;
+      color: $headingMainColor !important;
+      outline: none !important;
+    }
+  }
+
+  &.selectpicker {
+    display: none !important;
+  }
+
+  // list items
+  .dropdown-menu {
+    li {
+      .dropdown-item {
+        outline: none !important;
+        font-size: 14px;
+        color: $headingMainColor;
+        border-radius: 0;
+
+        &.active,
+        &:active,
+        &:hover {
+          outline: none !important;
+          background-color: $primaryColor;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

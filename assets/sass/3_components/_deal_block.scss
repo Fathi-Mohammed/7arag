@@ -1,0 +1,140 @@
+.deal_block__ {
+  border-radius: $mainBorderRadius;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: #fff;
+
+  .img_block {
+    position: relative;
+
+    .figure__ {
+      padding-bottom: 65.818181%;
+      overflow: hidden;
+    }
+
+    .deal_like {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 9;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: rgba(#fff, 0.8);
+      border: none;
+      color: $secondaryColor;
+      padding: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover,
+      &.active {
+        path {
+          fill: $secondaryColor;
+        }
+      }
+    }
+  }
+
+  .description__ {
+    padding: 23px 15px 15px;
+    display: flex;
+    flex-direction: column;
+
+    .head__ {
+      font-size: 16px;
+      font-weight: 400;
+      color: $headingMainColor;
+      margin-bottom: 15px;
+      text-decoration: none;
+      transition: 0.5s;
+    }
+
+    .parg__ {
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      color: $paragraphMainColor;
+    }
+
+    .deal_info_link {
+      text-decoration: none;
+      color: $headingMainColor;
+      display: flex;
+      align-items: center;
+      align-self: self-end;
+      transition: 0.5s;
+
+      .icon {
+        margin-inline-start: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        border: 1px solid $secondaryColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+
+        svg {
+          fill: $secondaryColor;
+          transition: 0.5s;
+        }
+      }
+
+      &:hover {
+        color: $secondaryColor;
+      }
+
+      &:hover .icon {
+        background-color: $secondaryColor;
+
+        & svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .deal_status {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0;
+    color: $paragraphMainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $paragraphMainColor;
+      margin-inline-end: 5px;
+      display: block;
+    }
+
+    &.done__ {
+      &::before {
+        background-color: #5EBC0D;
+      }
+    }
+  }
+
+  &:hover {
+    .img_block img {
+      transform: scale(1.1);
+    }
+
+    .description__ .head__ {
+      color: $secondaryColor;
+    }
+  }
+
+}

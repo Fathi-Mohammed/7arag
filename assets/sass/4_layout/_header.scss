@@ -1,0 +1,61 @@
+@import "header/dropdown";
+@import "header/login_buttons";
+@import "header/1_logo";
+@import "header/2_navbar";
+@import "header/toolbar_options";
+
+.fixed_header__ {
+  background-color: #fff;
+  position: relative;
+  z-index: 111;
+  box-shadow: 0 0 7px rgba(#000, 0.06);
+
+  .top_header {
+    padding: 30px 0;
+
+  }
+
+  &.active_menu__,
+  &.not_active_menu__ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    transition: 0.5s;
+  }
+
+  &.active_menu__ {
+    animation: active-menu 0.5s;
+  }
+
+  &.not_active_menu__ {
+    animation: not-active-menu 0.5s;
+    // transform: translateY(-100%);
+    top: -200px;
+  }
+}
+
+@keyframes active-menu {
+  0% {
+    // transform: translateY(-100%);
+    top: -200px;
+  }
+
+  100% {
+    // transform: translateY(0);
+    top: 0;
+  }
+}
+
+@keyframes not-active-menu {
+  0% {
+    // transform: translateY(0);
+    top: 0;
+  }
+
+  100% {
+    // transform: translateY(-100%);
+    top: -200px;
+  }
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Safka</title>
+
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- start header  -->
+    <header class="main_header__">
+      <div class="fixed_header__">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-12">
+              <nav class="nav-om" id="navbar-menu-om">
+                <button class="close-button__"></button>
+
+                <figure class="figure__ nav_logo__">
+                  <img src="assets/images/logo.png" alt=".." />
+                </figure>
+                <div class="sing-up-blocks nav_sign_block__">
+                  <a class="singup_link login_link" href="register_signin.html"
+                    >تسجيل الدخول</a
+                  >
+                  <a class="singup_link" href="register_signin.html">
+                    <figure
+                      class="figure__ icon__ loading-omd"
+                      style="background-color: #dbecff"
+                    >
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/header_user.svg"
+                        alt=".."
+                      />
+                    </figure>
+                    حساب جديد
+                  </a>
+                </div>
+                <ul class="nav-list-om list-unstyled">
+                  <li class="active">
+                    <a href="index.html">الرئيسية</a>
+                  </li>
+                  <li class="mega_menu__">
+                    <a class="" href="department.html"> نبذة عنا </a>
+                  </li>
+                  <li>
+                    <a href="my_ads.html">القطاعات </a>
+                  </li>
+                  <li>
+                    <a href="my_ads.html">الأقسام</a>
+                  </li>
+                  <li>
+                    <a href="my_ads.html">اتصل بنا</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+              <a class="header_logo__" href="index.html">
+                <figure class="figure__">
+                  <img src="assets/images/logo.png" alt=".." />
+                </figure>
+              </a>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+              <ul class="toolbar_options__ list-unstyled">
+                <li class="block__">
+                  <div class="lang__ dropdown__">
+                    <a class="lang_link__ butt__" href="#!">
+                      <figure class="figure__">
+                        <img src="./assets/images/saudi.png" alt="" />
+                      </figure>
+                      العربية
+                    </a>
+                    <ul class="sub-menu__">
+                      <li><a href="#!">العربية</a></li>
+                      <li><a href="#!">English</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="block__ larg_size_only__">
+                  <div class="sing-up-blocks">
+                    <a
+                      class="singup_link login_link"
+                      href="register_signin.html"
+                      >تسجيل الدخول</a
+                    >
+                    <a class="singup_link" href="register_signin.html">
+                      <figure
+                        class="figure__ icon__ loading-omd"
+                        style="background-color: #dbecff"
+                      >
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/shapes/header_user.svg"
+                          alt=".."
+                        />
+                      </figure>
+                      حساب جديد
+                    </a>
+                  </div>
+                </li>
+
+                <!-- <li class="block__ dropdown__">
+              <a class="info_link_block__" href="#!">
+                مرحبا , خالد
+              </a>
+              <ul class="sub-menu__">
+                <li>
+                  <a class="modify" href="modify_my_data.html">
+                    تعديل بياناتى
+                  </a>
+                </li>
+                <li>
+                  <a class="orders" href="change_password.html">
+                    طلبات الأحلام
+                  </a>
+                </li>
+                <li>
+                  <a class="wallet" href="change_password.html">
+                    محفظتي
+                  </a>
+                </li>
+                <li>
+                  <a class="signout_link__" href="#!">
+                    تسجيل الخروج
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="block__">
+              <a class="notifications_block__" href="#!">
+                <img class="img-om" src="./assets//images/notification.svg" alt=".." />
+                <span class="badge">12</span>
+              </a>
+            </li> -->
+                <!-- start active nenu button in small sizes  -->
+                <li class="block__ small_size_only__">
+                  <button
+                    class="menu_button__ button__"
+                    id="menu-butt-activ-om"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="bars"
+                      class="svg-inline--fa fa-bars fa-w-14"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                      ></path>
+                    </svg>
+                  </button>
+                </li>
+                <!-- end active nenu button in small sizes  -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <!-- end header  -->
+
+    <main class="registeration_page__ default_page__">
+      <div class="container">
+        <div class="main_form__ default_form__ verification_section_content__">
+          <div class="form_title__ centered">
+            <h1 class="title__ title_first__">رمز التحقق</h1>
+            <p class="parg__ not_full_width__">
+              أدخل رمز التحقق التي تم إرساله عبر رقم هاتفك 
+            </p>
+            <p class="parg__ not_full_width__ phone_number__">
+              +966 05940 256
+            </p>
+          </div>
+          <form action="register_verification_code.html">
+            <div class="input_group__">
+              <div class="input-group-om code_shapes__">
+                <input placeholder="ــــ" name="code" class="code-input" required />
+                <input placeholder="ــــ" name="code" class="code-input" required />
+                <input placeholder="ــــ" name="code" class="code-input" required />
+                <input placeholder="ــــ" name="code" class="code-input" required />
+                <input placeholder="ــــ" name="code" class="code-input" required />
+                <input placeholder="ــــ" name="code" class="code-input" required />
+              </div>
+            </div>
+            <div class="final_buttons_wrapper__">
+              <button class="submit-button__ full_width__">تاكيد</button>
+              <div class="buttons_group__">
+                <button class="submit-button__ send_code_again__">إعادة إرسال رمز التحقق</button>
+                <a href="#" class="link-om back_to_edit_phone_number__">الرجوع لتعديل رقم الهاتف</a>
+
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer_sec__">
+      <div class="container">
+        <div class="footer_content__">
+          <div class="row">
+            <div class="col-lg-5 col-md-12">
+              <figure class="footer-logo__ figure-om loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/footer-logo.png"
+                  alt=".."
+                  width=""
+                  height=""
+                />
+              </figure>
+              <p class="footer_parg__">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+              </p>
+            </div>
+            <div class="col-lg-7 col-md-12">
+              <div class="row">
+                <div class="col-lg-4 col-md-12">
+                  <h2 class="site_head__ footer_head__">روابط سريعة</h2>
+                  <ul class="footer_list__ list-unstyled">
+                    <li><a href="#!">القطاعات</a></li>
+                    <li>
+                      <a href="#!">الأقسام</a>
+                    </li>
+                    <li><a href="#!">نبذة عن منصة </a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                  <h2 class="site_head__ footer_head__">المساعدة</h2>
+                  <ul class="footer_list__ list-unstyled">
+                    <li><a href="#!">الشروط والأحكام</a></li>
+                    <li>
+                      <a href="#!">الأسئلة الشائعة</a>
+                    </li>
+                    <li><a href="#!">اتصل بنا</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                  <h2 class="site_head__ footer_head__">تواصل معنا</h2>
+                  <ul class="footer_list__ contact_info list-unstyled">
+                    <li>
+                      <a href="#!">
+                        <figure class="figure__">
+                          <img
+                            class="img-om"
+                            src="./assets/images/shapes/whatsapp.svg"
+                            alt=".."
+                            width=""
+                            height=""
+                          />
+                        </figure>
+                        +966 123-456-7890
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#!">
+                        <figure class="figure__">
+                          <img
+                            class="img-om"
+                            src="./assets/images/shapes/email.svg"
+                            alt=".."
+                            width=""
+                            height=""
+                          />
+                        </figure>
+                        name123@gmail.com
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#!">
+                        <figure class="figure__">
+                          <img
+                            class="img-om"
+                            src="./assets/images/shapes/location.svg"
+                            alt=".."
+                            width=""
+                            height=""
+                          />
+                        </figure>
+                        طريق الملك فهد
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyrights_content___">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12">
+              <p class="copyrights__">
+                جميع الحقوق محفوظة - تصميم وبرمجة 2022 &copy;
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <ul class="footer_socials__ list-unstyled">
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/twitter.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <p class="copyrights__ end__">
+                تصميم وتطوير
+                <a href="#!">
+                  <img src="./assets/images/copyrights.png" alt=".." />
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- start js include  -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/plugin.js"></script>
+  </body>
+</html>

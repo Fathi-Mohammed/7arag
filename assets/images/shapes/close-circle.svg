@@ -1,0 +1,6 @@
+<svg id="vuesax_bold_close-circle" data-name="vuesax/bold/close-circle" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="close-circle">
+    <path id="Vector" d="M13.333,0A13.333,13.333,0,1,0,26.667,13.333,13.355,13.355,0,0,0,13.333,0Zm4.48,16.4a1.006,1.006,0,0,1,0,1.413,1,1,0,0,1-1.413,0l-3.067-3.067-3.067,3.067a1,1,0,0,1-1.413,0,1.006,1.006,0,0,1,0-1.413l3.067-3.067L8.853,10.267a1,1,0,0,1,1.413-1.413l3.067,3.067L16.4,8.853a1,1,0,1,1,1.413,1.413l-3.067,3.067Z" transform="translate(2.667 2.667)" fill="#969696"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0H32V32H0Z" transform="translate(32 32) rotate(180)" fill="none" opacity="0"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="flag_broken" data-name="flag/broken" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="vuesax_broken_flag" data-name="vuesax/broken/flag">
+    <g id="flag">
+      <path id="Vector" d="M0,0V20" transform="translate(5.15 2)" fill="none" stroke="#ea0248" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-2" data-name="Vector" d="M11.2,0c2.7,0,3.3,1.5,1.4,3.4L11.4,4.6a1.933,1.933,0,0,0,0,2.8l1.2,1.2c1.9,1.9,1.2,3.4-1.4,3.4H0" transform="translate(5.15 4)" fill="none" stroke="#ea0248" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H6.85" transform="translate(5.15 4)" fill="none" stroke="#ea0248" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

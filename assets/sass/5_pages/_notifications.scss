@@ -1,0 +1,49 @@
+.notifications_blocks{
+  .form_title__ {
+    .title__,
+    .sub_title__ {
+      text-align: start;
+      margin-inline-start: 25px;
+    }
+    
+    .sub_title__ {
+      margin-inline-start: 15px;
+    }
+  }
+}
+
+.notification_block__ {
+  box-shadow: 0 0 30px rgba($shadowColor, 0.16);
+  padding: 27px;
+
+  .head__{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    .title__{
+      font-size: 14px;
+      font-weight: 500;
+      color: $headingMainColor;
+    }
+
+    .notification_time__ {
+      font-size: 13px;
+      font-weight: 500;
+      color: $paragraphMainColor;
+    }
+  }
+  
+  .notification_parag {
+    font-size: 15px;
+    font-weight: 500;
+    color: $paragraphMainColor;
+    margin: 0;
+    
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

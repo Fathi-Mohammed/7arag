@@ -1,0 +1,139 @@
+.received_conversations {
+  background-color: $mainBackgroundColor;
+  padding: 36px 20px;
+  border-radius: $mainBorderRadius;
+
+  @include sm {
+    margin-bottom: 30px;
+  }
+
+  .title__ {
+    font-size: 15px;
+    font-weight: 600;
+    color: $headingMainColor;
+    margin-bottom: 20px;
+    margin-inline-start: 17px;
+  }
+  
+  .conversations_user_search {
+    margin-bottom: 10px;
+  }
+
+  .conversations__ {
+    max-height: 500px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  }
+  
+  .conversation_strip__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    cursor: pointer;
+
+    .message_info {
+      .time__ {
+        font-size: 13px;
+        font-weight: 500;
+        color: $paragraphMainColor;
+        margin-bottom: 10px;
+      }
+
+      .message_count__ {
+        background-color: $mainRedColor;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+        border-radius: 50%;
+        font-size: 13px;
+        font-weight: 500;
+        width: 22px;
+        height: 22px;
+        overflow: hidden;
+      }
+    }
+
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $borderColor;
+    }
+  }
+  
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+
+  .icon__ {
+    max-width: 70px;
+    max-height: 70px;
+    padding: 20px;
+    background-color: rgba($primaryColor, 0.1);
+    border-radius: 50%;
+    margin-inline-end: 25px;
+    
+    .img-om {
+      max-width: 30px;
+      max-height: 30px;
+    }
+  }
+
+  .name__ {
+    font-size: 14px;
+    font-weight: 600;
+    color: $headingMainColor;
+    max-height: 20px;
+    overflow: hidden;
+  }
+
+  .last_message_parag__ {
+    margin-top: 17px;
+    font-size: 13px;
+    font-weight: 500;
+    color-scheme: $paragraphMainColor;
+    max-height: 19px;
+    overflow: hidden;
+  }
+}
+
+.main_conversation {
+  .head_ {
+    background-color: $mainBackgroundColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px;
+    padding-inline-start: 32px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+    @include xxs {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  .conversation_content{
+    max-height: 510px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  }
+  
+  .send_message_group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

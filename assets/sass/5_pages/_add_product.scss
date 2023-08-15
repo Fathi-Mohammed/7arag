@@ -1,0 +1,28 @@
+.add_product_page {
+  .input_group__ {
+    margin-bottom: 15px;
+  }
+
+  .radio_title__ {
+    margin-bottom: 13px;
+    margin-inline-start: 17px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .radio_block {
+    @include xs {
+      margin-bottom: 15px;
+    }
+  }
+
+  .select__ {
+    margin-bottom: 15px;
+
+    .dropdown-toggle{
+      &::after {
+        content: url(../images/shapes/arrow-circle-down.svg);
+      }
+    }
+  }
+}

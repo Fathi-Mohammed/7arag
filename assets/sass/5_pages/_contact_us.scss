@@ -1,0 +1,53 @@
+
+.contact_us_form_wrapper__ {
+  .form_image__ {
+    width: 100%;
+    padding-bottom: 74.43%;
+  }
+
+  .form_title__ {
+    margin-bottom: 50px;
+
+    .title__ {
+      text-align: start;
+      margin-inline-start: 25px;
+    }
+    
+    .sub_title__ {
+      text-align: start;
+      margin-inline-start: 15px;
+    }
+  }
+}
+
+.phone_number {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .icon__ {
+    background-color: rgba($primaryColor, 0.13);
+    width: fit-content;
+    padding: 14px 25px;
+    border-radius: $mainBorderRadius;
+
+    .img-om {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .title__ {
+    color: $paragraphMainColor;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .link__ {
+    color: $primaryColor;
+    font-size: 23px;
+    font-weight: 600;
+  }
+}

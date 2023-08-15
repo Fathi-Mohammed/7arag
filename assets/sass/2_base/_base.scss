@@ -1,0 +1,41 @@
+body {
+  font-size: 16px;
+  font-family: "Cairo";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: $paragraphMainColor;
+}
+
+.overflow-body {
+  overflow: hidden;
+}
+
+p {
+  font-size: 18px;
+  color: $paragraphMainColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headingMainColor;
+}
+
+.list-unstyled {
+  margin-bottom: 0;
+}
+
+svg {
+  max-width: 100%;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

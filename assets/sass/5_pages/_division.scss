@@ -1,0 +1,121 @@
+.divisions_page {
+  padding-bottom: 0;
+}
+
+.post_content {
+  padding: 22px 20px 30px;
+
+  .title__ {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: $headingMainColor;
+  }
+
+  .price_report_block__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+
+    .price_title__ {
+      font-size: 18px;
+      color: $headingSecondaryColor;
+
+      .price {
+        margin: 0 5px;
+        color: $secondaryColor;
+        font-weight: 700;
+      }
+    }
+
+    .report_link__ {
+      color: $mainRedColor;
+    }
+  }
+
+  .slide_block__ {
+    margin-bottom: 15px;
+
+    .img_block {
+      .figure__ {
+        padding-bottom: 52.38%;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      margin: 0;
+    }
+
+    .swiper-pagination {
+      margin-top: 0;
+    }
+
+    .swiper_buttons_group__ {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .site_head__ {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .parag__ {
+    color: $paragraphMainColor;
+    font-size: 14px;
+    margin-bottom: 22px;
+
+    &.parag_point__ {
+      margin: 0;
+      margin-bottom: 20px;
+      color: $paragraphMainColor;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+
+      &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $secondaryColor;
+        margin-inline-end: 10px;
+        display: block;
+      }
+    }
+  }
+}
+
+.deal_owner_block {
+  .deal_owner_link {
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+.share_deal_block {
+  .share_deal_content {
+    padding: 20px;
+  }
+
+  .link_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: $mainBorderRadius;
+    height: 48px;
+    background-color: $mainBackgroundColor;
+    padding: 15px;
+    margin-bottom: 20px;
+
+    .deal_link {
+      color: $headingMainColor;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}

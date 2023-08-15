@@ -1,0 +1,60 @@
+.nav-tabs {
+  padding: 0;
+  border: none;
+  margin-bottom: 30px !important;
+
+  .nav-item {
+    border: none;
+    height: 40px;
+    min-width: 85px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: $mainBorderRadius;
+    color: $headingMainColor;
+
+    &.active {
+      background-color: $secondaryColor;
+      color: #fff;
+    }
+  }
+}
+
+.nav-pills {
+  padding: 0;
+  border: none;
+
+  .nav-link {
+    border: none;
+    height: 48px;
+    min-width: 240px;
+    padding: 0 17px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: $mainBorderRadius;
+    color: $headingMainColor;
+    font-size: 14px;
+
+    @include md {
+      min-width: 100%;
+    }
+
+    .icon__ {
+      margin-inline-end: 13px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &.active {
+      background-color: $secondaryColor;
+      color: #fff;
+
+      .icon__ {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// scroll bar
+@media only screen and (min-width: 991px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primaryColor;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primaryColor;
+  }
+
+  // list items
+  .dropdown-menu {
+    /* width  of scrollbar*/
+    .inner {
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+    }
+  }
+}

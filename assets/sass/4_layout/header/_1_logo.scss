@@ -1,0 +1,26 @@
+.header_logo__ {
+  width: 100px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+  @include sm {
+    width: 80px;
+    margin: 0;
+  }
+
+  @include xxs {
+    width: 70px;
+  }
+
+  .figure__ {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}

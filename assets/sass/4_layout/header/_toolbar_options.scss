@@ -1,0 +1,72 @@
+.menu_button__ {
+  display: none;
+
+  @include sm {
+    width: 49px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($primaryColor, 0.1);
+    position: relative;
+    width: 40px;
+    height: 40px;
+    color: $primaryColor;
+    border-radius: 50%;
+
+    svg {
+      width: 15px;
+    }
+  }
+}
+
+.lang__ {
+  .lang_link__ {
+    .figure__ {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-inline-end: 10px;
+    }
+  }
+}
+
+.toolbar_options__ {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  justify-content: flex-end;
+
+
+  @include sm {
+    margin-top: 15px;
+    justify-content: space-evenly;
+  }
+
+  .block__ {
+    &.small_size_only__ {
+      display: none;
+
+      @include sm {
+        display: block;
+      }
+    }
+
+    &.larg_size_only__ {
+      @include sm {
+        display: none;
+      }
+    }
+
+    &:not(:first-child) {
+      margin-inline-start: 20px;
+
+      @include sm {
+        margin-inline-start: 4px;
+      }
+    }
+  }
+}

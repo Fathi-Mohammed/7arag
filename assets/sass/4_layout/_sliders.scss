@@ -1,0 +1,94 @@
+// swiper slider
+.swiper-button-next,
+.swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(#000, 0.16);
+  background-color: #fff;
+  
+
+  &.swiper-button-disabled {
+    // opacity: 1;
+  }
+
+  &::after {
+    content: url("../images/shapes/arrow-left.svg");
+    display: block;
+    position: static;
+    height: 52px;
+    transform: unset;
+
+    @include dir {
+      transform: rotateY(-180deg);
+    }
+  }
+
+  &:hover {
+    background-color: $primaryColor ;
+
+    &::after {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  &.single_page_button {
+    position: static;
+    border: 1px solid $borderColor;
+
+    &::after {
+      content: url("../images/shapes/arrow-right.svg");
+      filter: brightness(0.8) grayscale(1);
+    }
+
+    &:hover {
+      background-color: $primaryColor;
+      border-color: $primaryColor;
+
+      &::after {
+        filter: unset;
+      }
+    }
+  }
+}
+
+.swiper-button-next {
+  &::after {
+    transform: rotateY(-180deg);
+
+    @include dir {
+      transform: rotateY(0);
+    }
+  }
+}
+
+// swiper-pagination
+.swiper-pagination {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: $greyColor;
+  border: 2px solid #fff;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+
+
+  &.swiper-pagination-bullet-active {
+    background-color: $primaryColor;
+  }
+}
+
+// ###################################################################

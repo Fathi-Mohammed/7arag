@@ -1,0 +1,124 @@
+.product_description {
+  .head__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title__ {
+      color: $headingMainColor;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .button__ {
+      border: none;
+    }
+  }
+
+  .price_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+
+    .product_type {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 8px 16px;
+      background-color: rgba($headingMainColor, 0.08);
+      border-radius: $mainBorderRadius;
+      font-size: 13px;
+    }
+  }
+
+  .product_paragraph {
+    color: $paragraphMainColor;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+}
+
+.comments_section {
+  margin-bottom: 60px;
+  margin-top: 86px;
+  .head__ {
+    font-size: 15px;
+    margin-bottom: 45px;
+  }
+  
+  .comment_input_group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    .submit-button__ {
+      width: 178px;
+    }
+  }
+
+  .comment_strip__ {
+    margin-bottom: 10px;
+    padding: 27px 43px;
+    background-color: $secondGreyColor;
+    border-radius: $mainBorderRadius;
+
+    .head_group__ {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .title__{
+        font-size: 13px;
+        margin-inline-start: 10px;
+        font-weight: 600;
+      }
+      
+      .time__ {
+        font-size: 13px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 0;
+        color: $placeholderColor;
+
+        &::before {
+          content: url(../images/shapes/clock.svg);
+          display: block;
+          width: 18px;
+          height: 18px;
+        }
+      }
+      
+    }
+
+    .comment_paragraph {
+      font-size: 13px;
+      color: $placeholderColor;
+      font-weight: 500;
+    }
+  }
+}
+
+.similar_ads {
+  margin-bottom: 60px;
+  .head__ {
+    font-size: 15px;
+    margin-bottom: 45px;
+  }
+
+  .products_seller_section {
+    padding: 0;
+  }
+
+  .products_seller_content {
+    padding: 26px 36px;
+    margin: 0;
+  }
+}

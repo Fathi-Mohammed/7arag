@@ -1,0 +1,197 @@
+.section_block {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(#000, 0.2);
+  margin-bottom: 30px;
+}
+
+
+.my_account_page__ {
+  margin-bottom: 10px;
+
+  .alert_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+
+    .section_content {
+      .title__ {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: $headingMainColor;
+      }
+
+      .parag__ {
+        font-size: 14px;
+        color: $paragraphMainColor;
+        margin: 0;
+      }
+    }
+  }
+
+  .tabs_head_section {
+    background-color: #fff;
+
+    .title__ {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 17px;
+    }
+
+    .log_out_button {
+      justify-content: start;
+      color: #f54748;
+
+      &:hover {
+        background-color: rgba(#f54748, 0.1);
+      }
+    }
+  }
+
+  .tab_content_section {
+    padding: 0;
+
+    ///////////
+
+    .input_group__ {
+      width: 50%;
+
+      @include xs {
+        width: 100%;
+      }
+    }
+
+    ////////////////
+
+    .account_info_blocks__ {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 2px 4px rgba(#000, 0.2);
+
+      .account_img_block__ {
+        padding: 30px;
+        text-align: center;
+        border-bottom: 1px solid $borderColor;
+
+        .account_img_group__ {
+          position: relative;
+          margin: 0 auto;
+          margin-bottom: 15px;
+          width: fit-content;
+
+          .account_img__ {
+            width: 86px;
+            height: 86px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            .img-om {
+              object-fit: cover;
+            }
+          }
+
+          .change_photo_button {
+            position: absolute;
+            border-radius: 50%;
+            top: -7px;
+            inset-inline-start: -7px;
+            width: 32px;
+            height: 32px;
+            background-color: $mainBackgroundColor;
+            border: 2px solid #fff;
+          }
+        }
+
+        .title__ {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      .account_name_block {
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+
+        @include xs {
+          flex-direction: column;
+        }
+
+        .submit-button__ {
+          align-self: flex-end;
+        }
+      }
+    }
+
+    .phone_blocks__ {
+      background-color: #fff;
+      padding: 0;
+
+      .input_group__ {
+        padding: 20px;
+        margin: 0;
+      }
+    }
+
+    .change_password_blocks__ {
+      padding: 0;
+      background-color: #fff;
+
+      .inputs_block__ {
+        padding: 20px;
+        padding-bottom: 0;
+      }
+
+      .input_group__ {
+        width: 100%;
+      }
+    }
+
+    .button_block__ {
+      border-top: 1px solid $borderColor;
+      padding: 20px;
+    }
+
+    .submit-button__ {
+      margin-inline-start: auto;
+      min-width: 123px;
+    }
+
+    .phone_blocks__ {
+      background-color: #fff;
+      padding: 0;
+
+      .input_group__ {
+        padding: 20px;
+        margin: 0;
+      }
+    }
+
+    .change_password_blocks__ {
+      padding: 0;
+      background-color: #fff;
+
+      .inputs_block__ {
+        padding: 20px;
+        padding-bottom: 0;
+      }
+
+      .input_group__ {
+        width: 100%;
+      }
+    }
+
+    .button_block__ {
+      border-top: 1px solid $borderColor;
+      padding: 20px;
+    }
+
+    .submit-button__ {
+      margin-inline-start: auto;
+      min-width: 123px;
+    }
+  }
+}

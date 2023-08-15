@@ -1,0 +1,166 @@
+.profile_section {
+  margin-bottom: 70px;
+  padding-top: 112px;
+
+  .profile_info {
+    background-color: #fff;
+    border-radius: $secondaryBorderRadius;
+    margin-bottom: 20px;
+
+    .profile_img {
+      width: 126px;
+      height: 126px;
+      overflow: hidden;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      transform: translateY(-63px);
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .name {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      margin-top: -50px;
+    }
+  }
+
+  .profile_abstract {
+    background-color: #fff;
+    border-radius: 15px;
+
+    .nav-tabs {
+      padding: 16px;
+      border-bottom: 1px solid #d9e0e5;
+      margin-bottom: 0;
+    }
+
+    .tab-content {
+      padding: 16px;
+
+      .abstract_tab {
+        .abstract_parag {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}
+
+.contacts_buttons_block__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d9e0e5;
+  padding: 16px;
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  .tel_num {
+    @include sm {
+      margin-bottom: 15px;
+    }
+
+    .name {
+      font-size: 18px;
+      margin-inline-end: 5px;
+      color: $headingMainColor;
+    }
+
+    svg {
+      margin-inline-end: 5px;
+    }
+
+    .tel_link {
+      text-decoration: none;
+      color: #000;
+      transition: 0.5s;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  .messages_btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @include sm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .site_message_link {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      min-width: 158px;
+
+      @include sm {
+        margin: 0;
+        min-width: 192.6px;
+      }
+
+      svg {
+        fill: #22b1bf;
+        margin-inline-end: 5px;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+
+    .whats_message_link {
+      font-size: 12px;
+      background-color: #5ebc0d;
+      border-color: #5ebc0d;
+      color: #fff;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 158px;
+
+      @include sm {
+        min-width: 192.6px;
+      }
+
+      svg {
+        margin-inline-end: 5px;
+        fill: #fff;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        background-color: #fff;
+        color: #5ebc0d;
+
+        svg {
+          fill: #5ebc0d;
+        }
+      }
+    }
+  }
+}

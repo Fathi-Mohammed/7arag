@@ -1,0 +1,47 @@
+.privacy_policy_page__ {
+  padding: 10px 0 50px;
+}
+
+// about-us and privacy policy Styles
+
+.privacy_policy_block,
+.about_us_block {
+  background-color: #fff;
+padding-top: 30px;
+
+
+  .section_head {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-inline-start: 25px;
+    color: $headingMainColor;
+  }
+
+  .sub_title__ {
+    font-size: 13px;
+    color: $paragraphMainColor;
+    margin-bottom: 30px;
+    margin-inline-start: 15px;
+  }
+
+  .parag_head {
+    font-size: 15px;
+    font-weight: 600;
+    color: $headingMainColor;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .parag__ {
+    font-size: 15px;
+    font-weight: 500;
+    color: $paragraphMainColor;
+    line-height: 1.8;
+    margin: 0;
+    
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+}

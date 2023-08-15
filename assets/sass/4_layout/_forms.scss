@@ -1,0 +1,362 @@
+@import "forms/input_block";
+@import "forms/textarea_block";
+@import "forms/submit_block";
+@import "forms/select_block";
+@import "forms/checkbox_input";
+@import "forms/radio_input";
+@import "forms/datepicker";
+
+.form_wrapper__ {
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid #f0f1f6;
+  box-shadow: 0 2px 4px rgba(#000000, 0.2);
+
+  @include sm {
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+.form_image__ {
+  padding-bottom: 73%;
+  margin-bottom: 20px;
+
+  img {
+    object-fit: contain;
+  }
+
+  &.small_size_image__ {
+    max-width: 259px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-bottom: 44%;
+    margin-top: 30px;
+  }
+}
+
+.default_form__ {
+  max-width: 510px;
+}
+
+.main_form__ {
+  max-width: 469px;
+  margin: 0 auto;
+}
+
+.form_title__ {
+  margin-bottom: 30px;
+
+  @include sm {
+    text-align: center;
+  }
+
+  .sub_title__ {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: $paragraphMainColor;
+    text-align: center;
+
+    @include xs {
+      font-size: 16px;
+    }
+  }
+
+  .title__ {
+    font-size: 24px;
+    color: $headingSecondaryColor;
+    margin-bottom: 18px;
+    font-weight: 600;
+    text-align: center;
+
+    &.title_first__ {
+      margin-bottom: 25px;
+    }
+
+    @include xs {
+      font-size: 22px;
+    }
+  }
+
+  .parg__ {
+    font-size: 16px;
+    color: $paragraphMainColor;
+    margin-bottom: 0;
+
+
+    &.not_full_width__ {
+      max-width: 80%;
+      margin: 0 auto;
+
+      @include xs {
+        max-width: 100%;
+      }
+    }
+    &.phone_number__ {
+      margin-bottom: 60px;
+    }
+  }
+
+  .link__ {
+    font-size: 14px;
+    color: $secondaryColor;
+    margin-top: 10px;
+  }
+
+  &.centered {
+    text-align: center;
+  }
+}
+
+.input_group__ {
+  margin-bottom: 20px;
+
+  &.flex_group__ {
+    display: flex;
+    align-items: center;
+
+    &.group_gap__ {
+      gap: 20px;
+    }
+  }
+
+  &.none_margin__ {
+    margin: 0;
+  }
+
+  &.keywords_input_group__ {
+    position: relative;
+
+    .keywords_input_rule__{
+      position: absolute;
+      top: 50%;
+      inset-inline-end: 28px;
+      transform: translateY(-50%);
+      font-size: 13px;
+      color: $paragraphMainColor;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      &::before {
+        content: url(../images/shapes/info-circle.svg);
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.final_buttons_wrapper__ {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input_group_unit__ {
+  display: flex;
+  align-items: center;
+
+  .input__ {
+    border-radius: 0 $mainBorderRadius $mainBorderRadius 0;
+
+    @include dir {
+      border-radius: $mainBorderRadius 0 0 $mainBorderRadius;
+    }
+  }
+
+  .unit__ {
+    min-width: 67px;
+    height: 56px;
+    border-radius: $mainBorderRadius 0 0 $mainBorderRadius;
+    border: 1px solid $borderColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+  }
+}
+
+.label__ {
+  color: $headingSecondaryColor;
+  font-size: 15px;
+  margin-bottom: 15px;
+  display: block;
+
+  .optional__ {
+    font-size: 13px;
+    color: $paragraphSecondaryColor;
+    margin-inline-start: 5px;
+  }
+
+  &.centered {
+    text-align: center;
+  }
+}
+
+.password-group-om {
+  position: relative;
+
+  .input__ {
+    padding-inline-end: 40px;
+  }
+
+  .show-password-button-om {
+    position: absolute;
+    top: 0;
+    inset-inline-end: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    outline: none;
+    width: 36px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #969696;
+
+    @include dir {
+      left: unset;
+      right: 0;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.show-om {
+      color: $secondaryColor;
+    }
+  }
+}
+
+.icon_input_group {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    top: 50%;
+    inset-inline-start: 15px;
+    transform: translateY(-50%);
+    filter: grayscale(1);
+    pointer-events: none;
+  }
+
+  &.name__ {
+    &::after {
+      content: url(../images/shapes/user.svg);
+    }
+  }
+
+  &.phone__ {
+    &::after {
+      content: url(../images/shapes/input_phone_icon.svg);
+    }
+  }
+
+  &.password__ {
+    &::after {
+      content: url(../images/shapes/password.svg);
+    }
+  }
+
+  &.textarea__ {
+    &::after {
+      content: url(../images/shapes/textarea.svg);
+      top: 20px;
+      transform: unset;
+    }
+  }
+
+  &:focus-within {
+    &::after {
+      filter: none;
+    }
+  }
+}
+
+.drag_file_upload {
+
+  .drag_file_label {
+    width: 178px;
+    max-width: 178px;
+    height: 157px;
+    border-radius: $mainBorderRadius;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $borderColor;
+
+  }
+
+  .drug_file_input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+
+.upload_files_group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 45px;
+
+  @include xs {
+    flex-direction: column;
+  }
+
+}
+
+.uploaded_files {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 35px;
+
+  @include md {
+    justify-content: center;
+  }
+
+  .file_info__ {
+    min-width: 150px;
+    overflow: hidden;
+
+    .file_figure {
+      padding-bottom: 76.10%;  
+      width: 100%;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-bottom: 17px;
+      max-width: 159px;
+      box-shadow: 0 0 30px rgba(#000, 0.16);
+    }
+
+    .file_description {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .name__ {
+        font-size: 14px;
+        font-weight: 300;
+        color: $headingMainColor;
+      }
+    }
+  }
+}

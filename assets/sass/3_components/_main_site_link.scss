@@ -1,0 +1,32 @@
+.site_link {
+  padding: 0 26px;
+  background-color: $primaryColor;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 162px;
+  color: #fff;
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: max-content;
+  border-radius: $mainBorderRadius;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  @include sm {
+    min-width: 100px;
+  }
+
+  &:hover {
+    background-color: rgba($primaryColor, 0.9);
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .icon__ {
+    margin-inline-start: 6px;
+  }
+}

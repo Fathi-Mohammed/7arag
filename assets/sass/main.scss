@@ -1,0 +1,61 @@
+// abstracts or helpers
+@import "1_abstracts/variables";
+@import "1_abstracts/functions";
+@import "1_abstracts/mixins";
+
+// base
+@import "2_base/fonts";
+@import "2_base/base";
+@import "2_base/links";
+@import "2_base/buttons";
+@import "2_base/overlay";
+@import "2_base/selection_color";
+@import "2_base/scroll_bar";
+@import "2_base/lazy_load";
+@import "2_base/image_block";
+@import "2_base/close_button";
+
+//3_components
+@import "3_components/bootstrap_accordion";
+@import "3_components/bootstrap_modal";
+@import "3_components/bootstrap_tabs";
+@import "3_components/breadcrumb";
+@import "3_components/main_site_link";
+@import "3_components/main_heading";
+@import "3_components/pagination";
+@import "3_components/sector_block";
+@import "3_components/deal_block";
+@import "3_components/sector_divisions_block";
+@import "3_components/search_form";
+@import "3_components/message_block";
+@import "3_components/product_card";
+
+
+// 4_layout
+@import "4_layout/header";
+@import "4_layout/footer";
+@import "4_layout/forms";
+@import "4_layout/sliders";
+
+// 5_pages
+@import "5_pages/default_page";
+@import "5_pages/home";
+@import "5_pages/registerration_pages";
+@import "5_pages/deals";
+@import "5_pages/contact_us";
+@import "5_pages/consultation_request";
+@import "5_pages/terms_and_conditions";
+@import "5_pages/notifications";
+@import "5_pages/profile";
+@import "5_pages/single_chat";
+@import "5_pages/division";
+@import "5_pages/my_account";
+@import "5_pages/site_sections";
+@import "5_pages/product";
+@import "5_pages/privacy_policy";
+@import "5_pages/about_us";
+@import "5_pages/my_products";
+@import "5_pages/chat";
+@import "5_pages/add_product";
+@import "5_pages/favorite_product";
+

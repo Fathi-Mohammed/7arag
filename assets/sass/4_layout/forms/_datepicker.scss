@@ -1,0 +1,145 @@
+.ui-datepicker {
+  background-color: #fff;
+  width: 400px;
+  z-index: 11;
+  // box-shadow      : 0 5px 10px 0 rgb(0 0 0 / 4%);
+  border: 1px solid #d7dbdd;
+  border-radius: 10px;
+  padding: 0;
+  position: relative;
+
+  table {
+    margin: 0;
+  }
+
+  // header
+  .ui-datepicker-header {
+    padding: 15px 15px;
+    border-bottom: 1px solid #d7dbdd;
+  }
+
+  // title
+  .ui-datepicker-title {
+    color: $headingMainColor;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    text-align: unset;
+  }
+
+  @include xs {
+    width: 82%;
+  }
+
+  thead {
+    border-bottom: 1px solid #d7dbdd;
+    min-height: 58px;
+  }
+
+  th {
+    span {
+      color: #8f9bb3;
+      font-size: 14px;
+    }
+  }
+
+  td {
+    padding: 5px;
+
+    @include xs {
+      padding: 0;
+    }
+
+    span,
+    a {
+      display: flex;
+      align-items: center;
+      align-items: center;
+      font-size: 15px;
+      color: $headingSecondaryColor;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      margin: 2px auto;
+
+      @include xs {
+        width: 30px;
+        height: 30px;
+      }
+
+      &.ui-state-active {
+        background-color: $secondaryColor;
+        color: #fff;
+      }
+    }
+
+    &.ui-state-disabled {
+      opacity: 0.7;
+
+      span,
+      a {
+        color: #ddd;
+      }
+    }
+  }
+
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &.ui-state-disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  }
+
+  .ui-datepicker-prev {
+    left: 25px;
+    right: unset;
+
+    @include dir {
+      left: unset !important;
+      right: 5px !important;
+    }
+
+    &::after {
+      content: url(../images/date-arrow-right.svg);
+    }
+  }
+
+  .ui-datepicker-next {
+    right: unset;
+    left: 5px;
+
+    @include dir {
+      right: 25px !important;
+      left: unset !important;
+    }
+
+    &::after {
+      content: url(../images/date-arrow-left.svg);
+    }
+  }
+}
+
+// .full-widthdate-picker-om {
+//     .ui-datepicker {
+//         width: 100%;
+//     }
+// }
+
+.datepicker_group_ {
+  &::after {
+    content: url("../images/date__.svg");
+    position: absolute;
+    top: 16px;
+    left: 32px;
+    pointer-events: none;
+  }
+}
