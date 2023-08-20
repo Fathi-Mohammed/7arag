@@ -2,68 +2,70 @@
   padding: 20px 0 54px;
 
   .section_link {
-    padding: 70px 67px;
+    padding: 70px 40px 65px;
     height: 265px;
     border-radius: $mainBorderRadius;
-    background-color: $orangeColor;
+    background-color: $orangeColor; //var
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
     overflow: hidden;
     position: relative;
     margin-bottom: 30px;
 
+    @include xxs {
+      padding-left: 10px;
+      padding-right: 10px;
+      gap: 10px;
+    }
+
     .link_description {
-      flex-shrink: 0;
-      margin-bottom: -60px;
+      align-self: flex-end;
+      margin-bottom: -20px;
     }
 
     .title__ {
       color: #fff;
       font-size: 31px;
       margin-bottom: 13px;
+
+      @include xxs {
+        font-size: 25px;
+      }
     }
     
     .parag__ {
       color: #fff;
       font-size: 20px;
       margin-inline-start: 10px;
+
+      @include xxs {
+        font-size: 15px;
+      }
+    }
+    
+    .icon__ {
+      margin-bottom: -20px;
+      flex-shrink: 0;
+      transition: 0.5s;
     }
 
-    .icon__ {
-      transition: 0.5s;
-
-      .img-om {
-        transform: scale(1.3);
-      }
+    .background_icon__ {
+      position: absolute;
+      bottom: 25px;
+      inset-inline-start: 15%;
+      transform: scale(2);
+      opacity: 0.15;
     }
 
     &.person_link__ {
       .icon__ {
-        margin-bottom: -260px;
+        margin-bottom: -35px;
       }
 
-      &::before {
-        bottom: -30%;
-      }
-    }
-
-    &::before {
-      content: url(../images/site-sections/person.png);
-      position: absolute;
-      bottom: -55%;
-      inset-inline-start: 30%;
-      opacity: 0.15;
-      transform: scale(1.5);
-      z-index: 10;
-      width: 100%;
-      height: 100%;
-    }
-
-    &.clothes_link__ {
-      &::before {
-        content: url(../images/site-sections/clothes.png);
+      .background_icon__ {
+        transform: scale(1.3);
+        bottom: 0;
       }
     }
 
