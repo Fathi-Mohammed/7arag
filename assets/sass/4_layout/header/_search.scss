@@ -1,5 +1,14 @@
 .header_search_wrapper__ {
-    @include sm {
-        display: none;
-    }
+  @include sm {
+    display: none;
+  }
+}
+
+.nav_bar_search_wrapper__ {
+	margin-bottom: 20px;
+	display: none;
+
+	@include sm {
+		display: block;
+	}
 }

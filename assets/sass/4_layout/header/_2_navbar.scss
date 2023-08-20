@@ -4,12 +4,12 @@
 }
 
 .nav-om {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
   position: relative;
-  width: 100%;
-  z-index: 1;
+  // width: 100%;
+  // z-index: 1;
 
   .close-button__,
   .nav_logo__ {
@@ -23,10 +23,14 @@
   .nav-list-om {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
     justify-content: space-between;
-    gap: 34px;
+    margin-bottom: 0;
+    // gap: 15px;
     // margin-inline-end: 78px;
+
+    @include sm {
+          flex-wrap: wrap;
+    }
 
     @include md {
       margin-inline-end: 40px;
@@ -64,20 +68,13 @@
           height: 28px;
           flex-shrink: 0;
 
-          path {
-            stroke: #fff;
-            transition: 0.5s;
-          }
         }
 
         &:hover {
           color: $orangeColor;
 
           .icon__ {
-            path {
-              stroke: $orangeColor;
-              fill: $orangeColor;
-            }
+            filter: brightness(0) saturate(1) invert(0.66) sepia(0.28) saturate(28.67) hue-rotate(350deg) brightness(0.90) contrast(0.90);
           }
         }
       }
@@ -164,21 +161,28 @@
       flex-wrap: wrap;
       gap: 15px;
 
+      @include xs {
+        gap: 0;
+      }
+
       @include xxs {
         justify-content: flex-start;
         gap: 0;
       }
       
-      a {
+      > a,.dropdown__ {
         color: #fff;
         padding: 10px 25px;
         display: block;
         margin-bottom: 20px;
         font-size: 16px;
+        display: flex;
+        align-items: center;
 
         @include xxs {
           margin: 0;
           width: 100%;
+          height: 49px;
 
           &:nth-child(odd) {
               background-color: rgba(#fff, 0.2);
@@ -186,19 +190,14 @@
         }
         
         .icon__ {
-          path {
-            stroke: #fff;
-            transition: 0.5s;
-          }
+          filter: brightness(0) invert(1);
         }
 
         &:hover {
           color: $orangeColor;
 
           .icon__ {
-            path {
-              stroke: $orangeColor;
-            }
+            filter: brightness(0) saturate(1) invert(0.66) sepia(0.28) saturate(28.67) hue-rotate(350deg) brightness(0.90) contrast(0.90);
           }
         }
       }
@@ -224,8 +223,18 @@
         > a {
           color: #fff;
           padding: 10px 25px;
-          display: block;
+          // display: block;
           margin: 0;
+          gap: 0;
+
+          .icon__ {
+            min-width: 24px;
+            min-height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-inline-end: 15px;
+          }
 
           &::after {
             content: none;
@@ -245,6 +254,27 @@
         &:nth-child(odd) {
           > a {
             background-color: rgba(#fff, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include xxs {
+  .logged_in_header__ {
+    .nav-list-om {
+      > li {
+        &:nth-child(odd) {
+          > a {
+            background-color: unset !important;
+          }
+        }
+        
+        &:nth-child(even) {
+          > a {
+            background-color: rgba(#fff, 0.2) !important;
           }
         }
       }

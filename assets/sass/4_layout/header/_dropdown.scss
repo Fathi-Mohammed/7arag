@@ -2,32 +2,56 @@
 .dropdown__ {
   position: relative;
 
+  @include xxs {
+    height: 49px;
+  }
+
   > a,
   .butt__ {
     position: relative;
-    display: flex;
+    display: flex !important;
     align-items: center;
-    margin: 0;
+    margin: 0 !important;
     color: $headingMainColor;
     font-size: 14px;
 
+    @include sm {
+      color: #fff;
+
+      &:hover {
+        color: $orangeColor !important;
+      }
+    }
+
+    @include xxs {
+      width: 100%;
+    }
+
     .icon__ {
+      max-height: 24px;
+      max-width: 24px;
       margin-inline-end: 15px;
+
+      @include sm {
+        filter: brightness(0) invert(1);
+      }
     }
 
     &::after {
       content: url(../images/shapes/arrow-circle-down.svg);
       margin: 0;
-      margin-right: 0;
       display: inline-block;
       vertical-align: middle;
       border: none !important;
-      margin-top: 0;
       margin-inline-start: 6px;
       height: 18px;
-
+      
       @include sm {
-        transform: scale(0.5);
+        filter: brightness(0) invert(1);
+      }
+
+      @include xxs {
+        margin-inline-start: auto !important;
       }
     }
 
@@ -36,13 +60,13 @@
       color: $primaryColor;
 
       .icon__{
-        path {
-          stroke: $primaryColor;
+        filter: brightness(0) saturate(1) invert(0.16) sepia(0.53) saturate(38.40) hue-rotate(251deg) brightness(1.14) contrast(1.14);
+
+        @include sm {
+          filter: brightness(0) saturate(1) invert(0.66) sepia(0.28) saturate(28.67) hue-rotate(350deg) brightness(0.90) contrast(0.90);
         }
       }
     }
-    
-    
   }
 
   .sub-menu__ {
@@ -137,6 +161,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 10px;
           }
         }
       }

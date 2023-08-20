@@ -63,13 +63,10 @@ jQuery(document).ready(function ($) {
   showPassword($);
   collapseFooterMenusInSmallScreens($);
   toggleSideMenuInSmallScreens($);
-  stickyHeader($);
+  // stickyHeader($);
   verificationCodeSeprate();
   selectPIckerInit($);
-
   changeProductsLayout($);
-
-  // dragFilesUpload();
 });
 
 // functions init
@@ -273,55 +270,6 @@ function stickyHeader($) {
   });
 }
 
-function dragFilesUpload() {
-  const uploadFileInput = document.getElementById("drag_file_upload");
-  const outputFileParent = document.getElementById("uploaded_files");
-  const uploadFileInputLabel = document.getElementById("drag_file_label");
-  let outputFileChildren = "";
-
-  if (!uploadFileInput) {
-    return;
-  }
-
-  if (outputFileChildren == "") {
-    outputFileParent.style.display = "none";
-  }
-
-  uploadFileInput.addEventListener("change", () => {
-    const formatFileSize = function (bytes) {
-      const sufixes = ["B", "kB", "MB", "GB", "TB"];
-      const i = Math.floor(Math.log(bytes) / Math.log(1024));
-      return `${(bytes / Math.pow(1024, i)).toFixed(2)} ${sufixes[i]}`;
-    };
-
-    for (let i = 0; i < uploadFileInput.files.length; i++) {
-      if (i >= 5) {
-        break;
-      }
-      let file = uploadFileInput.files[i];
-      let fileName = file.name;
-      let fileSize = formatFileSize(file.size);
-
-      if (file.type === "image/jpeg" || file.type === "image/png") {
-        outputFileChildren += `
-            <div class="strip">
-              <p class="file_name">
-                ${fileName}
-                <span class="file_size"> حجم الملف ${fileSize}</span>
-              </p>
-              <button class="delete_file_button" onclick="return this.parentNode.remove()">
-                حذف
-              </button>
-            </div>
-          `;
-      }
-    }
-    uploadFileInputLabel.classList.add("change_border");
-    outputFileParent.style.display = "block";
-    outputFileParent.innerHTML = outputFileChildren;
-  });
-}
-
 function changeProductsLayout($) {
   $('.cards_view_button').on("click", function () {
     const productAttrTarget = $(this).attr("target");
@@ -337,3 +285,4 @@ function changeProductsLayout($) {
     }
   })
 }
+

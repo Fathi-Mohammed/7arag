@@ -39,9 +39,7 @@
     }
   }
 
-  &.add_product_header_link,
-  &.login_header_link,
-  &.favorite_header_link {
+  &.header_link__ {
     font-size: 12px;
     color: $headingMainColor;
     transition: 0.5s;
@@ -50,9 +48,7 @@
       color: $primaryColor;
 
       .icon__ {
-        path {
-          stroke: $primaryColor;
-        }
+        filter: brightness(0) saturate(1) invert(0.16) sepia(0.53) saturate(38.40) hue-rotate(251deg) brightness(1.14) contrast(1.14);
       }
     }
   }
