@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
   verificationCodeSeprate();
   selectPIckerInit($);
 
-  changeProductCardShow();
+  changeProductsLayout($);
 
   // dragFilesUpload();
 });
@@ -322,25 +322,18 @@ function dragFilesUpload() {
   });
 }
 
-function changeProductCardShow() {
-  document.querySelectorAll(".cards_view_button").forEach(function (element) {
-    element.addEventListener("click", function () {
-      let productCard = document
-        .querySelector(`.${this.getAttribute("target")}`)
-        .querySelectorAll(".product_card");
+function changeProductsLayout($) {
+  $('.cards_view_button').on("click", function () {
+    const productAttrTarget = $(this).attr("target");
+    const targetSection = $("." + productAttrTarget);
+    const products = targetSection.find(".product_card")
+    $(this).siblings().removeClass("active")
+    $(this).addClass("active")
 
-        if (this.classList.contains('virtical_cards_view')) {
-          productCard.forEach((element) => {
-            element.classList.add("vertical_view");
-          });
-          this.classList.add('active');
-        } else {
-          productCard.forEach((element) => {
-            element.classList.remove("vertical_view");
-          });
-          this.classList.add('active');
-        }
-
-    });
-  });
+    if ($(this).hasClass("virtical_cards_view")) {
+      products.addClass("vertical_view");
+    } else {
+      products.removeClass("vertical_view");
+    }
+  })
 }

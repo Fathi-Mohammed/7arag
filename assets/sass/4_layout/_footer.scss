@@ -65,6 +65,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 0 !important;
   
   @include sm {
     justify-content: center;
@@ -78,7 +79,7 @@
     width: 30%;
     list-style: none;
 
-    @include md {
+    @include xs {
       width: 100%;
     }
 

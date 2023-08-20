@@ -4,10 +4,7 @@
   .intro_slider_wrapper {
     position: relative;
     
-    .swiper-wrapper{
-      .swiper-slide {
-        cursor: pointer;
-      }
+    .swiper-container{
       .figure__ {
         padding-bottom: 23.08%;
         border-radius: $mainBorderRadius;
@@ -30,7 +27,12 @@
   .products_seller_content {
     background-color: $mainBackgroundColor;
     border-radius: 10px;
-    padding: 45px 30px 50px;
+    padding: 45px 25px 50px;
+
+    @include sm {
+      padding: 25px 25px 50px;
+
+    }
   }
 
   .slider_wrapper {
