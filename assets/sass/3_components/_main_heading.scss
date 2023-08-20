@@ -6,18 +6,11 @@
 
 
   @include sm {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   &.centered__ {
     text-align: center;
-
-    &::before,
-    &::after {
-      left: 50%;
-      transform: translateX(-50%);
-      inset-inline-start: unset;
-    }
   }
 }
 
@@ -65,12 +58,20 @@
     font-weight: 600;
     color: $headingMainColor;
     margin-bottom: 10px;
-  }
 
+    @include sm {
+      font-size: 18px;
+    }
+  }
+  
   .sub_title__ {
     color: $paragraphMainColor;
     font-size: 13px;
     font-weight: 500;
     margin: 0;
+    
+        @include sm {
+          font-size: 10px;
+        }
   }
 }

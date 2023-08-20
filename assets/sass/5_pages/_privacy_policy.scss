@@ -16,29 +16,45 @@ padding-top: 30px;
     margin-bottom: 10px;
     margin-inline-start: 25px;
     color: $headingMainColor;
-  }
 
+    @include sm {
+      font-size: 18px;
+    }
+  }
+  
   .sub_title__ {
     font-size: 13px;
     color: $paragraphMainColor;
     margin-bottom: 30px;
     margin-inline-start: 15px;
-  }
-
-  .parag_head {
-    font-size: 15px;
-    font-weight: 600;
-    color: $headingMainColor;
-    margin-bottom: 20px;
-    line-height: 1.5;
-  }
-
-  .parag__ {
-    font-size: 15px;
-    font-weight: 500;
-    color: $paragraphMainColor;
-    line-height: 1.8;
-    margin: 0;
+    
+        @include sm {
+          font-size: 10px;
+        }
+      }
+      
+      .parag_head {
+        font-size: 15px;
+        font-weight: 600;
+        color: $headingMainColor;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        
+            @include sm {
+              font-size: 12px;
+            }
+          }
+          
+          .parag__ {
+            font-size: 15px;
+            font-weight: 500;
+            color: $paragraphMainColor;
+            line-height: 1.8;
+            margin: 0;
+            
+                @include sm {
+                  font-size: 12px;
+                }
     
     &:not(:last-child) {
       margin-bottom: 35px;

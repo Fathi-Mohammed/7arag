@@ -46,5 +46,9 @@
     font-weight: 300;
     line-height: 1.8;
     color: $paragraphMainColor;
+
+    @include sm {
+      font-size: 13px;
+    }
   }
 }

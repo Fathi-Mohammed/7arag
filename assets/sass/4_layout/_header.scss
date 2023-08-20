@@ -3,6 +3,8 @@
 @import "header/1_logo";
 @import "header/2_navbar";
 @import "header/toolbar_options";
+@import "header/search";
+
 
 .fixed_header__ {
   background-color: #fff;
@@ -12,7 +14,11 @@
 
   .top_header {
     padding: 30px 0;
+    
+    @include sm {
+      padding: 10px 0;
 
+    }
   }
 
   &.active_menu__,
