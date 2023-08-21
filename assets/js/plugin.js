@@ -312,7 +312,7 @@ function productsLayout($) {
   const swiperProps = {
     autoplay: false,
     slidesPerColumn: 2,
-    loop: true,
+    loop: false,
     spaceBetween: 16,
     slidesPerColumnFill: "row",
   }
