@@ -1,72 +1,22 @@
 jQuery(document).ready(function ($) {
   lazyLoad();
 
-  const introSlider = swiperInit({
+  swiperInit({
     className: ".intro_slider_wrapper",
     breakpoints: false,
     observer: true,
     observeParents: true,
   });
 
-  let bestSellerSlider = swiperInit({
-    className: ".best_seller_slider_wrapper",
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      480: {
-        slidesPerView: 2,
-      },
-      767: {
-        slidesPerView: 3,
-      },
-      992: {
-        slidesPerView: 4,
-      },
-      1200: {
-        slidesPerView: 4,
-      },
-    },
-    observer: true,
-    observeParents: true,
-    grid: {
-      row: 2,
-    },
-  });
-
-  const ourChoiceSlider = swiperInit({
-    className: ".our_choice_wrapper",
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      480: {
-        slidesPerView: 1,
-      },
-      767: {
-        slidesPerView: 1,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 2,
-      },
-    },
-    observer: true,
-    observeParents: true,
-    grid: {
-      row: 2,
-    },
-  });
 
   showPassword($);
   collapseFooterMenusInSmallScreens($);
   toggleSideMenuInSmallScreens($);
-  // stickyHeader($);
   verificationCodeSeprate();
   selectPIckerInit($);
-  changeProductsLayout($);
+
+  productsLayout($)
+
 });
 
 // functions init
@@ -108,19 +58,16 @@ function lazyLoad() {
 }
 
 function swiperInit(
-  options = {
-    className: "",
-    breakpoints: null,
-    observer: false,
-    observeParents: false,
-  }
+  options
 ) {
-  return new Swiper(options.className + " .swiper-container", {
+  console.log(options);
+  const swiper = new Swiper(options.className + " .swiper-container", {
     spaceBetween: 30,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
     },
+    rtl: $("html").attr("dir") === "rtl" ? true : false,
     pagination: {
       el: options.className + " .swiper-pagination",
       clickable: true,
@@ -132,7 +79,13 @@ function swiperInit(
     breakpoints: options.breakpoints,
     observer: options.observer,
     observeParents: options.observeParents,
+    grid: options.grid,
+    ...options
   });
+
+  lazyLoad();
+
+  return swiper;
 }
 
 function verificationCodeSeprate() {
@@ -270,19 +223,135 @@ function stickyHeader($) {
   });
 }
 
-function changeProductsLayout($) {
+function dragFilesUpload() {
+  const uploadFileInput = document.getElementById("drag_file_upload");
+  const outputFileParent = document.getElementById("uploaded_files");
+  const uploadFileInputLabel = document.getElementById("drag_file_label");
+  let outputFileChildren = "";
+
+  if (!uploadFileInput) {
+    return;
+  }
+
+  if (outputFileChildren == "") {
+    outputFileParent.style.display = "none";
+  }
+
+  uploadFileInput.addEventListener("change", () => {
+    const formatFileSize = function (bytes) {
+      const sufixes = ["B", "kB", "MB", "GB", "TB"];
+      const i = Math.floor(Math.log(bytes) / Math.log(1024));
+      return `${(bytes / Math.pow(1024, i)).toFixed(2)} ${sufixes[i]}`;
+    };
+
+    for (let i = 0; i < uploadFileInput.files.length; i++) {
+      if (i >= 5) {
+        break;
+      }
+      let file = uploadFileInput.files[i];
+      let fileName = file.name;
+      let fileSize = formatFileSize(file.size);
+
+      if (file.type === "image/jpeg" || file.type === "image/png") {
+        outputFileChildren += `
+            <div class="strip">
+              <p class="file_name">
+                ${fileName}
+                <span class="file_size"> حجم الملف ${fileSize}</span>
+              </p>
+              <button class="delete_file_button" onclick="return this.parentNode.remove()">
+                حذف
+              </button>
+            </div>
+          `;
+      }
+    }
+    uploadFileInputLabel.classList.add("change_border");
+    outputFileParent.style.display = "block";
+    outputFileParent.innerHTML = outputFileChildren;
+  });
+}
+
+function productsLayout($) {
+  const swiperBreakNormalPoints = {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    767: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  };
+
+  const swiperVerticalBreakPoints = {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+  };
+
+  const swiperProps = {
+    autoplay: false,
+    slidesPerColumn: 2,
+    loop: true,
+    spaceBetween: 16,
+    slidesPerColumnFill: "row",
+  }
+
+  swiperProps.breakpoints = swiperBreakNormalPoints;
+  swiperProps.className = "#best_seller_swiper__";
+  swiperInit(swiperProps);
+
+  swiperProps.className = "#most_viewed_slider";
+  swiperInit(swiperProps);
+
+  swiperProps.className = "#our_choise_swiper__";
+  swiperProps.breakpoints = swiperVerticalBreakPoints;
+  swiperInit(swiperProps);
+
+
+
   $('.cards_view_button').on("click", function () {
     const productAttrTarget = $(this).attr("target");
     const targetSection = $("." + productAttrTarget);
     const products = targetSection.find(".product_card")
+    const swiperWrapper = targetSection.find(".products_seller_content").find(">div");
+    swiperProps.className = "#" + swiperWrapper.attr("id");
+
+
     $(this).siblings().removeClass("active")
-    $(this).addClass("active")
+    $(this).addClass("active");
 
     if ($(this).hasClass("virtical_cards_view")) {
       products.addClass("vertical_view");
+      swiperProps.breakpoints = swiperVerticalBreakPoints;
+
     } else {
       products.removeClass("vertical_view");
+      swiperProps.breakpoints = swiperBreakNormalPoints;
     }
-  })
-}
 
+    swiperInit(swiperProps);
+
+  })
+
+}
