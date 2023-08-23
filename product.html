@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>7rag</title>
 
-  <title>7rag</title>
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-  <link rel="stylesheet"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
-  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
-  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="assets/css/swiper.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body>
-  <!-- start header  -->
-  <header class="main_header__">
-    <div class="fixed_header__">
-      <div class="top_header">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-6 col-md-7 col-lg-6">
-              <div class="row">
-                <div class="col-3">
-                  <a class="header_logo__" href="index.html">
-                    <figure class="figure__">
-                      <img src="assets/images/logo.png" alt=".." />
-                    </figure>
-                  </a>
-                </div>
-                <div class="col-9">
-                  <div class="search_input_wrapper__ header_search_wrapper__">
-                    <input type="text" class="input__ search_input__" placeholder="إبحث من هنا">
+  <body>
+    <!-- start header  -->
+    <header class="main_header__">
+      <div class="fixed_header__">
+        <div class="top_header">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-6 col-md-7 col-lg-6">
+                <div class="row">
+                  <div class="col-3">
+                    <a class="header_logo__" href="index.html">
+                      <figure class="figure__">
+                        <img src="assets/images/logo.png" alt=".." />
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col-9">
+                    <div class="search_input_wrapper__ header_search_wrapper__">
+                      <input
+                        type="text"
+                        class="input__ search_input__"
+                        placeholder="إبحث من هنا"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-  
-            <div class="col-6 col-md-5 col-lg-6">
-              <ul class="toolbar_options__ list-unstyled">
-                <!-- <li class="block__ larg_size_only__">
+
+              <div class="col-6 col-md-5 col-lg-6">
+                <ul class="toolbar_options__ list-unstyled">
+                  <!-- <li class="block__ larg_size_only__">
                   <a class="link-om add_product_header_link with_icon header_link__" href="add_product.html">
                     <figure class="figure__ icon__ loading-omd">
                       <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/add-square.svg" alt=".." />
@@ -53,44 +58,62 @@
                     ابدأ بالبيع
                   </a>
                 </li> -->
-  
-                <li class="block__ larg_size_only__">
-                  <a class="link-om login_header_link with_icon header_link__" href="register_signin.html">
-                    <figure class="figure__ icon__ loading-omd">
-                      <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/user.svg" alt=".." />
-                    </figure>
-  
-                    تسجيل الدخول
-                  </a>
-                </li>
-  
-                <li class="block__ larg_size_only__">
-                  <a class="link-om favorite_header_link with_icon header_link__" href="favorite_product.html">
-                    <figure class="figure__ icon__ loading-omd">
-                      <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/heart-linear.svg" alt=".." />
-                    </figure>
 
-                    المفضلة
-                  </a>
-                </li>
-  
-                <li class="block__ larg_size_only__">
-                  <div class="lang__ dropdown__">
-                    <a class="lang_link__ butt__" href="#!">
+                  <li class="block__ larg_size_only__">
+                    <a
+                      class="link-om login_header_link with_icon header_link__"
+                      href="register_signin.html"
+                    >
                       <figure class="figure__ icon__ loading-omd">
-                        <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/global.svg" alt=".." />
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/shapes/head-shapes/user.svg"
+                          alt=".."
+                        />
                       </figure>
-  
-                      العربية
+
+                      تسجيل الدخول
                     </a>
-                    <ul class="sub-menu__">
-                      <li><a href="#!">العربية</a></li>
-                      <li><a href="#!">English</a></li>
-                    </ul>
-                  </div>
-                </li>
-  
-                <!-- <li class="block__ dropdown__ larg_size_only__">
+                  </li>
+
+                  <li class="block__ larg_size_only__">
+                    <a
+                      class="link-om favorite_header_link with_icon header_link__"
+                      href="favorite_product.html"
+                    >
+                      <figure class="figure__ icon__ loading-omd">
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/shapes/head-shapes/heart-linear.svg"
+                          alt=".."
+                        />
+                      </figure>
+
+                      المفضلة
+                    </a>
+                  </li>
+
+                  <li class="block__ larg_size_only__">
+                    <div class="lang__ dropdown__">
+                      <a class="lang_link__ butt__" href="#!">
+                        <figure class="figure__ icon__ loading-omd">
+                          <img
+                            class="lazy-omd img-om"
+                            data-src="assets/images/shapes/head-shapes/global.svg"
+                            alt=".."
+                          />
+                        </figure>
+
+                        العربية
+                      </a>
+                      <ul class="sub-menu__">
+                        <li><a href="#!">العربية</a></li>
+                        <li><a href="#!">English</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!-- <li class="block__ dropdown__ larg_size_only__">
                   <a class="info_link_block__ butt__" href="#!">
                     <figure class="figure__ icon__ loading-omd">
                       <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/user.svg" alt=".." />
@@ -126,613 +149,1023 @@
                     </li>
                   </ul>
                 </li> -->
-  
-                <li class="block__ larg_size_only__">
-                  <div class="more__ dropdown__">
-                    <a class="more_link__ butt__" href="#!">
-                      <figure class="figure__ icon__ loading-omd">
-                        <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/more.svg" alt=".." />
-                      </figure>
-  
-                      المزيد
-                    </a>
-                    <ul class="sub-menu__">
-                      <li class="block__">
-                        <a class="notifications_block__" href="#!">
-                          الإشعارات
-                          <span class="badge">12</span>
-                        </a>
-                      </li>
-                      <li><a href="about_us.html">من نحن</a></li>
-                      <li><a href="contact_us.html">تواصل معنا</a></li>
-                      <li><a href="common_questions.html">الأسئلة الشائعة</a></li>
-                      <li><a href="terms_and_conditions.html">الشروط و الأحكام</a></li>
-                      <li><a href="privacy_policy.html">سياسة الخصوصية</a></li>
-                    </ul>
-                  </div>
-                </li>
-  
-  
-                <!-- start active nenu button in small sizes  -->
-                <li class="block__ small_size_only__">
-                  <button class="menu_button__ button__" id="menu-butt-activ-om">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
-                      class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512">
-                      <path fill="currentColor"
-                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-                      </path>
-                    </svg>
-                  </button>
-                </li>
-                <!-- end active nenu button in small sizes  -->
-              </ul>
-            </div>
-            
-          </div>
-        </div>
-        <div class="overlay"></div>
-      </div>
-      <div class="nav_wrapper">
-        <div class="container">
-          <nav class="nav-om" id="navbar-menu-om">
-            <button class="close-button__"></button>
-  
-            <figure class="figure__ nav_logo__">
-              <img src="assets/images/logo.png" alt=".." />
-            </figure>
-            
-            <div class="search_input_wrapper__ nav_bar_search_wrapper__">
-              <input type="text" class="input__ search_input__" placeholder="إبحث من هنا">
-            </div>
-            
 
-            <div class="sing-up-blocks nav_sign_block__">
+                  <li class="block__ larg_size_only__">
+                    <div class="more__ dropdown__">
+                      <a class="more_link__ butt__" href="#!">
+                        <figure class="figure__ icon__ loading-omd">
+                          <img
+                            class="lazy-omd img-om"
+                            data-src="assets/images/shapes/head-shapes/more.svg"
+                            alt=".."
+                          />
+                        </figure>
 
-              <a class="link-om login_header_link with_icon" href="register_signin.html">
-                <svg class="icon__" id="vuesax_linear_user-add" data-name="vuesax/linear/user-add"
-                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <g id="user-add">
-                    <path id="Vector" d="M10,5A5,5,0,1,1,5,0,5,5,0,0,1,10,5Z" transform="translate(7 2)" fill="none"
-                      stroke="#0d2948" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                    <path id="Vector-2" data-name="Vector" d="M0,7C0,3.13,3.85,0,8.59,0a10.391,10.391,0,0,1,2.76.37"
-                      transform="translate(3.41 15)" fill="none" stroke="#0d2948" stroke-linecap="round"
-                      stroke-linejoin="round" stroke-width="1.5" />
-                    <path id="Vector-3" data-name="Vector"
-                      d="M8,4a3.594,3.594,0,0,1-.12.93,3.734,3.734,0,0,1-.46,1.13A3.97,3.97,0,0,1,4,8,3.921,3.921,0,0,1,1.34,6.97a3.684,3.684,0,0,1-.76-.91A3.921,3.921,0,0,1,0,4,3.994,3.994,0,0,1,4,0,3.944,3.944,0,0,1,6.97,1.33,3.984,3.984,0,0,1,8,4Z"
-                      transform="translate(14 14)" fill="none" stroke="#0d2948" stroke-linecap="round"
-                      stroke-linejoin="round" stroke-width="1.5" />
-                    <g id="Group">
-                      <path id="Vector-4" data-name="Vector" d="M2.98,0H0" transform="translate(16.51 17.98)"
-                        fill="none" stroke="#0d2948" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="1.5" />
-                      <path id="Vector-5" data-name="Vector" d="M0,0V2.99" transform="translate(18 16.52)" fill="none"
-                        stroke="#0d2948" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                    </g>
-                    <path id="Vector-6" data-name="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0" />
-                  </g>
-                </svg>
-  
-                تسجيل الدخول
-              </a>
+                        المزيد
+                      </a>
+                      <ul class="sub-menu__">
+                        <li class="block__">
+                          <a class="notifications_block__" href="#!">
+                            الإشعارات
+                            <span class="badge">12</span>
+                          </a>
+                        </li>
+                        <li><a href="about_us.html">من نحن</a></li>
+                        <li><a href="contact_us.html">تواصل معنا</a></li>
+                        <li>
+                          <a href="common_questions.html">الأسئلة الشائعة</a>
+                        </li>
+                        <li>
+                          <a href="terms_and_conditions.html"
+                            >الشروط و الأحكام</a
+                          >
+                        </li>
+                        <li>
+                          <a href="privacy_policy.html">سياسة الخصوصية</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
 
-              <a class="link-om favorite_header_link with_icon" href="favorite_product.html">
-                <svg class="icon__" id="heart_linear" data-name="heart/linear" xmlns="http://www.w3.org/2000/svg"
-                  width="24" height="24" viewBox="0 0 24 24">
-                  <g id="vuesax_linear_heart" data-name="vuesax/linear/heart">
-                    <g id="heart">
-                      <path id="Vector"
-                        d="M10.62,17.71a2.181,2.181,0,0,1-1.24,0C6.48,16.72,0,12.59,0,5.59A5.574,5.574,0,0,1,5.56,0,5.515,5.515,0,0,1,10,2.24,5.547,5.547,0,0,1,20,5.59C20,12.59,13.52,16.72,10.62,17.71Z"
-                        transform="translate(2 3.1)" fill="none" stroke="#0d2948" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="1.5" />
-                      <path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0" />
-                    </g>
-                  </g>
-                </svg>
-                المفضلة
-              </a>
-              
-              <div class="lang__ dropdown__">
-                <a class="lang_link__ butt__" href="#!">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/global-edit-linear.svg" alt=".." />
-                  </figure>
-                  العربية
-                </a>
-                <ul class="sub-menu__">
-                  <li><a href="#!">العربية</a></li>
-                  <li><a href="#!">English</a></li>
+                  <!-- start active nenu button in small sizes  -->
+                  <li class="block__ small_size_only__">
+                    <button
+                      class="menu_button__ button__"
+                      id="menu-butt-activ-om"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="bars"
+                        class="svg-inline--fa fa-bars fa-w-14"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <!-- end active nenu button in small sizes  -->
                 </ul>
               </div>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="nav_wrapper">
+          <div class="container">
+            <nav class="nav-om" id="navbar-menu-om">
+              <button class="close-button__"></button>
 
-              <div class="more__ dropdown__ side_navbar_menu_dropdown__">
-                <a class="more_link__ butt__" href="#!">
-                  <svg class="icon__" id="more-2_linear" data-name="more-2/linear" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" viewBox="0 0 24 24">
-                    <g id="vuesax_linear_more-2" data-name="vuesax/linear/more-2">
-                      <g id="more-2">
-                        <path id="Vector" d="M2.16,4.32A2.16,2.16,0,1,0,0,2.16,2.164,2.164,0,0,0,2.16,4.32Z"
-                          transform="translate(9.84 5)" fill="none" stroke="#0d2948" stroke-linecap="round"
-                          stroke-linejoin="round" stroke-width="1.5" />
-                        <path id="Vector-2" data-name="Vector"
-                          d="M2.16,4.32A2.16,2.16,0,1,0,0,2.16,2.164,2.164,0,0,0,2.16,4.32Z"
-                          transform="translate(4.63 14.68)" fill="none" stroke="#0d2948" stroke-linecap="round"
-                          stroke-linejoin="round" stroke-width="1.5" />
-                        <path id="Vector-3" data-name="Vector"
-                          d="M2.16,4.32A2.16,2.16,0,1,0,0,2.16,2.164,2.164,0,0,0,2.16,4.32Z"
-                          transform="translate(15.05 14.68)" fill="none" stroke="#0d2948" stroke-linecap="round"
-                          stroke-linejoin="round" stroke-width="1.5" />
-                        <path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0" />
+              <figure class="figure__ nav_logo__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+
+              <div class="search_input_wrapper__ nav_bar_search_wrapper__">
+                <input
+                  type="text"
+                  class="input__ search_input__"
+                  placeholder="إبحث من هنا"
+                />
+              </div>
+
+              <div class="sing-up-blocks nav_sign_block__">
+                <a
+                  class="link-om login_header_link with_icon"
+                  href="register_signin.html"
+                >
+                  <svg
+                    class="icon__"
+                    id="vuesax_linear_user-add"
+                    data-name="vuesax/linear/user-add"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g id="user-add">
+                      <path
+                        id="Vector"
+                        d="M10,5A5,5,0,1,1,5,0,5,5,0,0,1,10,5Z"
+                        transform="translate(7 2)"
+                        fill="none"
+                        stroke="#0d2948"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        id="Vector-2"
+                        data-name="Vector"
+                        d="M0,7C0,3.13,3.85,0,8.59,0a10.391,10.391,0,0,1,2.76.37"
+                        transform="translate(3.41 15)"
+                        fill="none"
+                        stroke="#0d2948"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        id="Vector-3"
+                        data-name="Vector"
+                        d="M8,4a3.594,3.594,0,0,1-.12.93,3.734,3.734,0,0,1-.46,1.13A3.97,3.97,0,0,1,4,8,3.921,3.921,0,0,1,1.34,6.97a3.684,3.684,0,0,1-.76-.91A3.921,3.921,0,0,1,0,4,3.994,3.994,0,0,1,4,0,3.944,3.944,0,0,1,6.97,1.33,3.984,3.984,0,0,1,8,4Z"
+                        transform="translate(14 14)"
+                        fill="none"
+                        stroke="#0d2948"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                      <g id="Group">
+                        <path
+                          id="Vector-4"
+                          data-name="Vector"
+                          d="M2.98,0H0"
+                          transform="translate(16.51 17.98)"
+                          fill="none"
+                          stroke="#0d2948"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          id="Vector-5"
+                          data-name="Vector"
+                          d="M0,0V2.99"
+                          transform="translate(18 16.52)"
+                          fill="none"
+                          stroke="#0d2948"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                        />
                       </g>
+                      <path
+                        id="Vector-6"
+                        data-name="Vector"
+                        d="M0,0H24V24H0Z"
+                        fill="none"
+                        opacity="0"
+                      />
                     </g>
                   </svg>
 
-                  المزيد
+                  تسجيل الدخول
                 </a>
-                <ul class="sub-menu__">
-                  <li class="block__">
-                    <a class="notifications_block__" href="#!">
-                      الإشعارات
-                      <span class="badge">12</span>
-                    </a>
-                  </li>
-                  <li><a href="about_us.html">من نحن</a></li>
-                  <li><a href="contact_us.html">تواصل معنا</a></li>
-                  <li><a href="common_questions.html">الأسئلة الشائعة</a></li>
-                  <li><a href="terms_and_conditions.html">الشروط و الأحكام</a></li>
-                  <li><a href="privacy_policy.html">سياسة الخصوصية</a></li>
-                </ul>
-              </div>
-            </div>
 
-            <ul class="nav-list-om list-unstyled">
-              <li>
-                <a href="#">
-
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/peson.svg" alt=".." />
-                  </figure>
-
-                  أشكال
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/clothes.svg" alt=".." />
-                  </figure>
-                  ملابس
-                  </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/gallery.svg" alt=".." />
-                  </figure>
-                  
-                  فنون الجدار
-                  </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/sticker.svg" alt=".." />
-                  </figure>
-                  
-                  ملصقات
-                  </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/home.svg" alt=".." />
-                  </figure>
-                  
-                  ديكورات المنزل
-                  </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/mobile.svg" alt=".." />
-                  </figure>
-                  
-                  ملحقات الأجهزة
-                  </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/swimming-accessories-.svg" alt=".." />
-                  </figure>                 
-                  
-                  الإكسسوارات
-                  </a>
-              </li>
-              <li>
-                <a href="site_sections.html">                
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/head-shapes/other.svg" alt=".." />
-                  </figure>
-                  
-                  أخرى
-                  </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-
-
-  </header>
-  <!-- end header  -->
-
-  <main class="product_page__ default_page__">
-    <div class="container">
-      <div class="product_slider">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="product_description desecration_block">
-              <div class="head__">
-                <div class="title__">شكل ذا فلاش حجم صغير</div>
-
-                <div class="buttons_group__">
-                  <button 
-                    type="button"
-                    class="report_product button__"
-                    data-toggle="modal"
-                    data-target="#deal_modal_report"
-                    >
-                    <figure class="figure__ icon__ loading-omd">
-                      <img class="lazy-omd img-om" data-src="assets/images/shapes/flag-broken.svg" alt=".." />
-                    </figure>
-                  </button>
-                  <button class="share_product button__">
-                    <figure class="figure__ icon__ loading-omd">
-                      <img class="lazy-omd img-om" data-src="assets/images/shapes/export-broken.svg" alt=".." />
-                    </figure>
-                  </button>
-                  <button class="add_to_favorite_product button__">
-                    <figure class="figure__ icon__ loading-omd">
-                      <img class="lazy-omd img-om" data-src="assets/images/shapes/heart-linear.svg" alt=".." />
-                    </figure>
-                  </button>
-                </div>
-              </div>
-              <div class="info__">
-
-                <div class="info_name__ ad_owner__">صاحب الإعلان</div>
-                <div class="info_name__ location__">الرياض</div>
-                <div class="info_name__ status__">منتج جديد</div>
-              </div>
-
-              <div class="price_wrapper">
-                <div class="product_type">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/vegeta.svg" alt=".." />
-                  </figure>
-                  أشكال
-                </div>
-
-                <div class="price__">
-                  35.00
-                  <span class="currency__">ر.س</span>
-                </div>
-              </div>
-
-              <div class="product_paragraph">
-                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض
-                النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن
-                ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم
-                إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم
-                مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف
-              </div>
-              <div class="links_group">
-                <button
-                  type="button"
-                  class="link__om text_link__"
-                  data-toggle="modal"
-                  data-target="#deal_modal_text_message"
+                <a
+                  class="link-om favorite_header_link with_icon"
+                  href="favorite_product.html"
                 >
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/message.svg" alt=".." />
-                  </figure>
-                  مراسلة
-                </button>
-                <button class="link__om call_link__">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/call.svg" alt=".." />
-                  </figure>
-                  اتصال
-                </button>
-                <a href="#" class="link__om whats_link__">
-                  <figure class="figure__ icon__ loading-omd">
-                    <img class="lazy-omd img-om" data-src="assets/images/shapes/whatsup.svg" alt=".." />
-                  </figure>
-                  واتساب
+                  <svg
+                    class="icon__"
+                    id="heart_linear"
+                    data-name="heart/linear"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g id="vuesax_linear_heart" data-name="vuesax/linear/heart">
+                      <g id="heart">
+                        <path
+                          id="Vector"
+                          d="M10.62,17.71a2.181,2.181,0,0,1-1.24,0C6.48,16.72,0,12.59,0,5.59A5.574,5.574,0,0,1,5.56,0,5.515,5.515,0,0,1,10,2.24,5.547,5.547,0,0,1,20,5.59C20,12.59,13.52,16.72,10.62,17.71Z"
+                          transform="translate(2 3.1)"
+                          fill="none"
+                          stroke="#0d2948"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          id="Vector-2"
+                          data-name="Vector"
+                          d="M0,0H24V24H0Z"
+                          fill="none"
+                          opacity="0"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  المفضلة
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="comments_section">
-        <h2 class="head__">التعليقات</h2>
-        <div class="comment_input_group">
-          <input type="text" class="input__" placeholder="اكتب تعليقك هنا">
-          <button class="submit-button__">أضف تعليقك</button>
-        </div>
-        <div class="comments_section_content">
-          
-          <div class="comment_strip__">
-            <div class="head_group__">
-              <div class="title__">اسم المستخدم</div>
-              <p class="time__">منذ ساعتين</p>
-            </div>
-            <p class="comment_paragraph">هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق </p>
-          </div>
-          
-          <div class="comment_strip__">
-            <div class="head_group__">
-              <div class="title__">اسم المستخدم</div>
-              <p class="time__">منذ ساعتين</p>
-            </div>
-            <p class="comment_paragraph">هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق </p>
-          </div>
 
-          <div class="comment_strip__">
-            <div class="head_group__">
-              <div class="title__">اسم المستخدم</div>
-              <p class="time__">منذ ساعتين</p>
-            </div>
-            <p class="comment_paragraph">هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق </p>
-          </div>
-          
-          <div class="comment_strip__">
-            <div class="head_group__">
-              <div class="title__">اسم المستخدم</div>
-              <p class="time__">منذ ساعتين</p>
-            </div>
-            <p class="comment_paragraph">هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق </p>
-          </div>
-
-        </div>
-      </div>
-      <div class="similar_ads">
-        <h2 class="head__">الإعلانات المشابهة</h2>
-        <div class="products_seller_section">
-          <div class="products_seller_content">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="product_card">
-                  <a class="img_block" href="#">
-                    <figure class="figure__ loading-omd asp-om">
-                      <img class="lazy-omd img-om" data-src="assets/images/best seller products/phone.png"
-                        alt="deals section block" />
+                <div class="lang__ dropdown__">
+                  <a class="lang_link__ butt__" href="#!">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/global-edit-linear.svg"
+                        alt=".."
+                      />
                     </figure>
+                    العربية
                   </a>
-                  <div class="desecration_block">
-                    <h3 class="title__">جراب حماية للجوال أبيض وأسود</h3>
-                    <div class="info__ centered">
-                      <div class="info_name__ location__">الرياض</div>
-                      <div class="info_name__ status__">منتج جديد</div>
-                    </div>
-                    <div class="price__">
-                      20.00
-                      <span class="currency__">ر.س</span>
-                    </div>
-                  </div>
+                  <ul class="sub-menu__">
+                    <li><a href="#!">العربية</a></li>
+                    <li><a href="#!">English</a></li>
+                  </ul>
+                </div>
+
+                <div class="more__ dropdown__ side_navbar_menu_dropdown__">
+                  <a class="more_link__ butt__" href="#!">
+                    <svg
+                      class="icon__"
+                      id="more-2_linear"
+                      data-name="more-2/linear"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        id="vuesax_linear_more-2"
+                        data-name="vuesax/linear/more-2"
+                      >
+                        <g id="more-2">
+                          <path
+                            id="Vector"
+                            d="M2.16,4.32A2.16,2.16,0,1,0,0,2.16,2.164,2.164,0,0,0,2.16,4.32Z"
+                            transform="translate(9.84 5)"
+                            fill="none"
+                            stroke="#0d2948"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                          />
+                          <path
+                            id="Vector-2"
+                            data-name="Vector"
+                            d="M2.16,4.32A2.16,2.16,0,1,0,0,2.16,2.164,2.164,0,0,0,2.16,4.32Z"
+                            transform="translate(4.63 14.68)"
+                            fill="none"
+                            stroke="#0d2948"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                          />
+                          <path
+                            id="Vector-3"
+                            data-name="Vector"
+                            d="M2.16,4.32A2.16,2.16,0,1,0,0,2.16,2.164,2.164,0,0,0,2.16,4.32Z"
+                            transform="translate(15.05 14.68)"
+                            fill="none"
+                            stroke="#0d2948"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                          />
+                          <path
+                            id="Vector-4"
+                            data-name="Vector"
+                            d="M0,0H24V24H0Z"
+                            fill="none"
+                            opacity="0"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+
+                    المزيد
+                  </a>
+                  <ul class="sub-menu__">
+                    <li class="block__">
+                      <a class="notifications_block__" href="#!">
+                        الإشعارات
+                        <span class="badge">12</span>
+                      </a>
+                    </li>
+                    <li><a href="about_us.html">من نحن</a></li>
+                    <li><a href="contact_us.html">تواصل معنا</a></li>
+                    <li><a href="common_questions.html">الأسئلة الشائعة</a></li>
+                    <li>
+                      <a href="terms_and_conditions.html">الشروط و الأحكام</a>
+                    </li>
+                    <li><a href="privacy_policy.html">سياسة الخصوصية</a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="product_card">
-                  <a class="img_block" href="#">
-                    <figure class="figure__ loading-omd asp-om">
-                      <img class="lazy-omd img-om" data-src="assets/images/best seller products/phone.png"
-                        alt="deals section block" />
+
+              <ul class="nav-list-om list-unstyled">
+                <li>
+                  <a href="#">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/head-shapes/peson.svg"
+                        alt=".."
+                      />
                     </figure>
+
+                    أشكال
                   </a>
-                  <div class="desecration_block">
-                    <h3 class="title__">جراب حماية للجوال أبيض وأسود</h3>
-                    <div class="info__ centered">
-                      <div class="info_name__ location__">الرياض</div>
-                      <div class="info_name__ status__">منتج جديد</div>
-                    </div>
-                    <div class="price__">
-                      20.00
-                      <span class="currency__">ر.س</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="product_card">
-                  <a class="img_block" href="#">
-                    <figure class="figure__ loading-omd asp-om">
-                      <img class="lazy-omd img-om" data-src="assets/images/best seller products/phone.png"
-                        alt="deals section block" />
+                </li>
+                <li>
+                  <a href="#">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/head-shapes/clothes.svg"
+                        alt=".."
+                      />
                     </figure>
+                    ملابس
                   </a>
-                  <div class="desecration_block">
-                    <h3 class="title__">جراب حماية للجوال أبيض وأسود</h3>
-                    <div class="info__ centered">
-                      <div class="info_name__ location__">الرياض</div>
-                      <div class="info_name__ status__">منتج جديد</div>
-                    </div>
-                    <div class="price__">
-                      20.00
-                      <span class="currency__">ر.س</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="product_card">
-                  <a class="img_block" href="#">
-                    <figure class="figure__ loading-omd asp-om">
-                      <img class="lazy-omd img-om" data-src="assets/images/best seller products/phone.png"
-                        alt="deals section block" />
+                </li>
+                <li>
+                  <a href="#">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/head-shapes/gallery.svg"
+                        alt=".."
+                      />
                     </figure>
+
+                    فنون الجدار
                   </a>
-                  <div class="desecration_block">
-                    <h3 class="title__">جراب حماية للجوال أبيض وأسود</h3>
-                    <div class="info__ centered">
-                      <div class="info_name__ location__">الرياض</div>
-                      <div class="info_name__ status__">منتج جديد</div>
-                    </div>
-                    <div class="price__">
-                      20.00
-                      <span class="currency__">ر.س</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/head-shapes/sticker.svg"
+                        alt=".."
+                      />
+                    </figure>
+
+                    ملصقات
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/head-shapes/home.svg"
+                        alt=".."
+                      />
+                    </figure>
+
+                    ديكورات المنزل
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/head-shapes/mobile.svg"
+                        alt=".."
+                      />
+                    </figure>
+
+                    ملحقات الأجهزة
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/head-shapes/swimming-accessories-.svg"
+                        alt=".."
+                      />
+                    </figure>
+
+                    الإكسسوارات
+                  </a>
+                </li>
+                <li>
+                  <a href="site_sections.html">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/head-shapes/other.svg"
+                        alt=".."
+                      />
+                    </figure>
+
+                    أخرى
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </header>
+    <!-- end header  -->
 
-  <!-- Start Modal -->
-  <!-- Report Modal -->
-  <div
-    class="modal fade deal_modal_report"
-    id="deal_modal_report"
-    data-bs-backdrop="static"
-    data-bs-keyboard="false"
-    tabindex="-1"
-    aria-labelledby="staticBackdropLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal_block__">
-          <figure class="figure__ img__ loading-omd asp-om">
-            <img
-              class="lazy-omd img-om"
-              data-src="assets/images/shapes/flag-broken.svg"
-              alt=".."
-            />
-          </figure>
-          <h2 class="title">إبلاغ</h2>
-          <p class="sub_title__">قم بالإبلاغ عن المنتج</p>
-          <textarea name="text_message" class="textarea-om" cols="30" rows="10" placeholder="اكتب نص الإبلاغ"></textarea>
-          <button type="button" class="submit-button__ full_width">إرسال</button>
-          <button type="button" class="close_modal_button" data-dismiss="modal" aria-label="Close">
-            <figure class="figure__ img__ loading-omd asp-om">
-              <img
-                class="lazy-omd img-om"
-                data-src="assets/images/shapes/close-circle.svg"
-                alt=".."
-              />
-            </figure>
-          </button>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Text Message Modal -->
-  <div
-    class="modal fade deal_modal_text_message"
-    id="deal_modal_text_message"
-    data-bs-backdrop="static"
-    data-bs-keyboard="false"
-    tabindex="-1"
-    aria-labelledby="staticBackdropLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal_block__">
-          <figure class="figure__ img__ loading-omd asp-om">
-            <img
-              class="lazy-omd img-om"
-              data-src="assets/images/shapes/message.svg"
-              alt=".."
-            />
-          </figure>
-          <h2 class="title">مراسلة نصية</h2>
-          <p class="sub_title__">قم بإرسال رسالة نصية لصاحب الإعلان</p>
-          <textarea name="text_message" class="textarea-om" cols="30" rows="10" placeholder="اكتب نص الرسالة"></textarea>
-          <button type="button" class="submit-button__ full_width">إرسال</button>
-          <button type="button" class="close_modal_button" data-dismiss="modal" aria-label="Close">
-            <figure class="figure__ img__ loading-omd asp-om">
-              <img
-                class="lazy-omd img-om"
-                data-src="assets/images/shapes/close-circle.svg"
-                alt=".."
-              />
-            </figure>
-          </button>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- End Modal -->
-
-  <footer class="footer_sec__">
-    <div class="container">
-      <div class="footer_content__">
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <div class="footer_site_desecration">
-              <figure class="footer-logo__ figure-om loading-omd">
-                <img class="lazy-omd img-om" data-src="assets/images/footer-logo.png" alt=".." width="" height="" />
-              </figure>
-              <p class="footer_parg__">
-                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض
-                النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن
-                ليس هناك أي كلمات أو عبارات محرجة </p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <ul class="footer_links">
-              <li class="links_item__"><a href="register_signup.html" class="link__">التسجيل بالموقع</a></li>
-              <li class="links_item__"><a href="common_questions.html" class="link__">الأسئلة الشائعة</a></li>
-              <li class="links_item__"><a href="terms_and_conditions.html" class="link__">الشروط و الأحكام</a></li>
-              <li class="links_item__"><a href="about_us.html" class="link__">معلومات عنا</a></li>
-              <li class="links_item__"><a href="contact_us.html" class="link__">تواصل معنا</a></li>
-              <li class="links_item__"><a href="privacy_policy.html" class="link__">سياسة الخصوصية</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copyrights__">
+    <main class="product_page__ default_page__">
       <div class="container">
+        <div class="product_slider">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="row row_modification__">
+                <!-- start  thumbnail slider  -->
+                <div class="col-lg-3">
+                  <div class="product_thumbnails_slider__">
+                    <div thumbsSlider="" class="swiper-container swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="slider_image_of_product__">
+                            <figure class="figure-om loading-omd asp-om">
+                              <img
+                                class="lazy-omd"
+                                data-src="assets/images/single-product/01.jpg"
+                                alt=".."
+                              />
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider_image_of_product__">
+                            <figure class="figure-om loading-omd asp-om">
+                              <img
+                                class="lazy-omd"
+                                data-src="assets/images/single-product/02.jpg"
+                                alt=".."
+                              />
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider_image_of_product__">
+                            <figure class="figure-om loading-omd asp-om">
+                              <img
+                                class="lazy-omd"
+                                data-src="assets/images/single-product/03.jpg"
+                                alt=".."
+                              />
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider_image_of_product__">
+                            <figure class="figure-om loading-omd asp-om">
+                              <img
+                                class="lazy-omd"
+                                data-src="assets/images/single-product/04.jpg"
+                                alt=".."
+                              />
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end  thumbnail slider  -->
 
-        <div class="copyrights_content__">
-          <span class="icon__">&copy;</span>
-          <span class="copyrights_parag">
-            جميع الحقوق محفوظة
-          </span>
-          <span class="copyrights_site_name">موقع 2023</span>
+                <!-- start main product slider  -->
+                <div class="col-lg-9">
+                  <div class="product_main_slider__">
+                    <div class="swiper-container swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <a
+                            class="slider_image_of_product__"
+                            data-fancybox="gallery"
+                            href="assets/images/products/Imput Image.jpg"
+                          >
+                            <figure class="figure-om loading-omd asp-om">
+                              <img
+                                class="lazy-omd"
+                                data-src="assets/images/single-product/01.jpg"
+                                alt=".."
+                              />
+                            </figure>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a
+                            class="slider_image_of_product__"
+                            data-fancybox="gallery"
+                            href="assets/images/products/Imput Image.jpg"
+                          >
+                            <figure class="figure-om loading-omd asp-om">
+                              <img
+                                class="lazy-omd"
+                                data-src="assets/images/single-product/02.jpg"
+                                alt=".."
+                              />
+                            </figure>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a
+                            class="slider_image_of_product__"
+                            data-fancybox="gallery"
+                            href="assets/images/products/Imput Image.jpg"
+                          >
+                            <figure class="figure-om loading-omd asp-om">
+                              <img
+                                class="lazy-omd"
+                                data-src="assets/images/single-product/03.jpg"
+                                alt=".."
+                              />
+                            </figure>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a
+                            class="slider_image_of_product__"
+                            data-fancybox="gallery"
+                            href="assets/images/products/Imput Image.jpg"
+                          >
+                            <figure class="figure-om loading-omd asp-om">
+                              <img
+                                class="lazy-omd"
+                                data-src="assets/images/single-product/04.jpg"
+                                alt=".."
+                              />
+                            </figure>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slider arrows  -->
+                    <div class="arrow-sec">
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end main product slider  -->
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="product_description desecration_block">
+                <div class="head__">
+                  <div class="title__">شكل ذا فلاش حجم صغير</div>
 
+                  <div class="buttons_group__">
+                    <button
+                      type="button"
+                      class="report_product button__"
+                      data-toggle="modal"
+                      data-target="#deal_modal_report"
+                    >
+                      <figure class="figure__ icon__ loading-omd">
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/shapes/flag-broken.svg"
+                          alt=".."
+                        />
+                      </figure>
+                    </button>
+                    <button class="share_product button__">
+                      <figure class="figure__ icon__ loading-omd">
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/shapes/export-broken.svg"
+                          alt=".."
+                        />
+                      </figure>
+                    </button>
+                    <button class="add_to_favorite_product button__">
+                      <figure class="figure__ icon__ loading-omd">
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/shapes/heart-linear.svg"
+                          alt=".."
+                        />
+                      </figure>
+                    </button>
+                  </div>
+                </div>
+                <div class="info__">
+                  <div class="info_name__ ad_owner__">صاحب الإعلان</div>
+                  <div class="info_name__ location__">الرياض</div>
+                  <div class="info_name__ status__">منتج جديد</div>
+                </div>
 
+                <div class="price_wrapper">
+                  <div class="product_type">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/vegeta.svg"
+                        alt=".."
+                      />
+                    </figure>
+                    أشكال
+                  </div>
+
+                  <div class="price__">
+                    35.00
+                    <span class="currency__">ر.س</span>
+                  </div>
+                </div>
+
+                <div class="product_paragraph">
+                  هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن
+                  الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                  العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                  عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو
+                  غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص
+                  لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم
+                  إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا
+                  باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية،
+                  مضاف
+                </div>
+                <div class="links_group">
+                  <button
+                    type="button"
+                    class="link__om text_link__"
+                    data-toggle="modal"
+                    data-target="#deal_modal_text_message"
+                  >
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/message.svg"
+                        alt=".."
+                      />
+                    </figure>
+                    مراسلة
+                  </button>
+                  <button class="link__om call_link__">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/call.svg"
+                        alt=".."
+                      />
+                    </figure>
+                    اتصال
+                  </button>
+                  <a href="#" class="link__om whats_link__">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/whatsup.svg"
+                        alt=".."
+                      />
+                    </figure>
+                    واتساب
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="comments_section">
+          <h2 class="head__">التعليقات</h2>
+          <div class="comment_input_group">
+            <input type="text" class="input__" placeholder="اكتب تعليقك هنا" />
+            <button class="submit-button__">أضف تعليقك</button>
+          </div>
+          <div class="comments_section_content">
+            <div class="comment_strip__">
+              <div class="head_group__">
+                <div class="title__">اسم المستخدم</div>
+                <p class="time__">منذ ساعتين</p>
+              </div>
+              <p class="comment_paragraph">
+                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن
+                الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                عليك أن تتحقق
+              </p>
+            </div>
 
+            <div class="comment_strip__">
+              <div class="head_group__">
+                <div class="title__">اسم المستخدم</div>
+                <p class="time__">منذ ساعتين</p>
+              </div>
+              <p class="comment_paragraph">
+                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن
+                الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                عليك أن تتحقق
+              </p>
+            </div>
+
+            <div class="comment_strip__">
+              <div class="head_group__">
+                <div class="title__">اسم المستخدم</div>
+                <p class="time__">منذ ساعتين</p>
+              </div>
+              <p class="comment_paragraph">
+                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن
+                الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                عليك أن تتحقق
+              </p>
+            </div>
+
+            <div class="comment_strip__">
+              <div class="head_group__">
+                <div class="title__">اسم المستخدم</div>
+                <p class="time__">منذ ساعتين</p>
+              </div>
+              <p class="comment_paragraph">
+                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن
+                الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                عليك أن تتحقق
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="similar_ads">
+          <h2 class="head__">الإعلانات المشابهة</h2>
+          <div class="products_seller_section">
+            <div class="products_seller_content">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="product_card">
+                    <a class="img_block" href="#">
+                      <figure class="figure__ loading-omd asp-om">
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/best seller products/phone.png"
+                          alt="deals section block"
+                        />
+                      </figure>
+                    </a>
+                    <div class="desecration_block">
+                      <h3 class="title__">جراب حماية للجوال أبيض وأسود</h3>
+                      <div class="info__ centered">
+                        <div class="info_name__ location__">الرياض</div>
+                        <div class="info_name__ status__">منتج جديد</div>
+                      </div>
+                      <div class="price__">
+                        20.00
+                        <span class="currency__">ر.س</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="product_card">
+                    <a class="img_block" href="#">
+                      <figure class="figure__ loading-omd asp-om">
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/best seller products/phone.png"
+                          alt="deals section block"
+                        />
+                      </figure>
+                    </a>
+                    <div class="desecration_block">
+                      <h3 class="title__">جراب حماية للجوال أبيض وأسود</h3>
+                      <div class="info__ centered">
+                        <div class="info_name__ location__">الرياض</div>
+                        <div class="info_name__ status__">منتج جديد</div>
+                      </div>
+                      <div class="price__">
+                        20.00
+                        <span class="currency__">ر.س</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="product_card">
+                    <a class="img_block" href="#">
+                      <figure class="figure__ loading-omd asp-om">
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/best seller products/phone.png"
+                          alt="deals section block"
+                        />
+                      </figure>
+                    </a>
+                    <div class="desecration_block">
+                      <h3 class="title__">جراب حماية للجوال أبيض وأسود</h3>
+                      <div class="info__ centered">
+                        <div class="info_name__ location__">الرياض</div>
+                        <div class="info_name__ status__">منتج جديد</div>
+                      </div>
+                      <div class="price__">
+                        20.00
+                        <span class="currency__">ر.س</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="product_card">
+                    <a class="img_block" href="#">
+                      <figure class="figure__ loading-omd asp-om">
+                        <img
+                          class="lazy-omd img-om"
+                          data-src="assets/images/best seller products/phone.png"
+                          alt="deals section block"
+                        />
+                      </figure>
+                    </a>
+                    <div class="desecration_block">
+                      <h3 class="title__">جراب حماية للجوال أبيض وأسود</h3>
+                      <div class="info__ centered">
+                        <div class="info_name__ location__">الرياض</div>
+                        <div class="info_name__ status__">منتج جديد</div>
+                      </div>
+                      <div class="price__">
+                        20.00
+                        <span class="currency__">ر.س</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Start Modal -->
+    <!-- Report Modal -->
+    <div
+      class="modal fade deal_modal_report"
+      id="deal_modal_report"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <figure class="figure__ img__ loading-omd asp-om">
+              <img
+                class="lazy-omd img-om"
+                data-src="assets/images/shapes/flag-broken.svg"
+                alt=".."
+              />
+            </figure>
+            <h2 class="title">إبلاغ</h2>
+            <p class="sub_title__">قم بالإبلاغ عن المنتج</p>
+            <textarea
+              name="text_message"
+              class="textarea-om"
+              cols="30"
+              rows="10"
+              placeholder="اكتب نص الإبلاغ"
+            ></textarea>
+            <button type="button" class="submit-button__ full_width">
+              إرسال
+            </button>
+            <button
+              type="button"
+              class="close_modal_button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ img__ loading-omd asp-om">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/shapes/close-circle.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <!-- start js include  -->
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/bootstrap-select.min.js"></script>
-  <script src="assets/js/mixitup.min.js"></script>
-  <script src="assets/js/jquery.fancybox.min.js"></script>
-  <script src="assets/js/swiper.min.js"></script>
-  <script src="assets/js/plugin.js"></script>
-</body>
+    <!-- Text Message Modal -->
+    <div
+      class="modal fade deal_modal_text_message"
+      id="deal_modal_text_message"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <figure class="figure__ img__ loading-omd asp-om">
+              <img
+                class="lazy-omd img-om"
+                data-src="assets/images/shapes/message.svg"
+                alt=".."
+              />
+            </figure>
+            <h2 class="title">مراسلة نصية</h2>
+            <p class="sub_title__">قم بإرسال رسالة نصية لصاحب الإعلان</p>
+            <textarea
+              name="text_message"
+              class="textarea-om"
+              cols="30"
+              rows="10"
+              placeholder="اكتب نص الرسالة"
+            ></textarea>
+            <button type="button" class="submit-button__ full_width">
+              إرسال
+            </button>
+            <button
+              type="button"
+              class="close_modal_button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ img__ loading-omd asp-om">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/shapes/close-circle.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- End Modal -->
+
+    <footer class="footer_sec__">
+      <div class="container">
+        <div class="footer_content__">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="footer_site_desecration">
+                <figure class="footer-logo__ figure-om loading-omd">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/footer-logo.png"
+                    alt=".."
+                    width=""
+                    height=""
+                  />
+                </figure>
+                <p class="footer_parg__">
+                  هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن
+                  الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                  العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                  عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <ul class="footer_links">
+                <li class="links_item__">
+                  <a href="register_signup.html" class="link__"
+                    >التسجيل بالموقع</a
+                  >
+                </li>
+                <li class="links_item__">
+                  <a href="common_questions.html" class="link__"
+                    >الأسئلة الشائعة</a
+                  >
+                </li>
+                <li class="links_item__">
+                  <a href="terms_and_conditions.html" class="link__"
+                    >الشروط و الأحكام</a
+                  >
+                </li>
+                <li class="links_item__">
+                  <a href="about_us.html" class="link__">معلومات عنا</a>
+                </li>
+                <li class="links_item__">
+                  <a href="contact_us.html" class="link__">تواصل معنا</a>
+                </li>
+                <li class="links_item__">
+                  <a href="privacy_policy.html" class="link__"
+                    >سياسة الخصوصية</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights__">
+        <div class="container">
+          <div class="copyrights_content__">
+            <span class="icon__">&copy;</span>
+            <span class="copyrights_parag"> جميع الحقوق محفوظة </span>
+            <span class="copyrights_site_name">موقع 2023</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- start js include  -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/plugin.js"></script>
+  </body>
 </html>

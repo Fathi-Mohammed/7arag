@@ -1,4 +1,5 @@
 .product_description {
+  padding: 0;
   .head__ {
     display: flex;
     align-items: center;
@@ -121,4 +122,8 @@
     padding: 26px 36px;
     margin: 0;
   }
+}
+
+.row_modification__ {
+  align-items: center;
 }

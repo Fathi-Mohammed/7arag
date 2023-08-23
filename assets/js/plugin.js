@@ -8,6 +8,79 @@ jQuery(document).ready(function ($) {
     observeParents: true,
   });
 
+      /********************************
+     *
+     * single product page - similar products slider   *
+     *
+     ********************************/
+      new Swiper(".similar_products_slider__ .swiper-container", {
+        spaceBetween: 15,
+        slidesPerView: 7,
+
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".similar_products_slider__ .swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".similar_products_slider__ .swiper-button-next",
+            prevEl: ".similar_products_slider__ .swiper-button-prev",
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 4,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        },
+    });
+
+    /********************************
+     *
+     * single page products slider -- product gallery  *
+     *
+     ********************************/
+
+    var productThumbs = new Swiper(".product_thumbnails_slider__ .swiper", {
+        loop: false,
+        // spaceBetween: 15,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesProgress: true,
+        direction: "vertical",
+    });
+
+    var productsImages = new Swiper(".product_main_slider__ .swiper", {
+        loop: false,
+        spaceBetween: 10,
+
+        pagination: {
+            el: ".product_main_slider__ .swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".product_main_slider__ .swiper-button-next",
+            prevEl: ".product_main_slider__ .swiper-button-prev",
+        },
+        thumbs: {
+            swiper: productThumbs,
+        },
+    });
+
 
   showPassword($);
   collapseFooterMenusInSmallScreens($);
