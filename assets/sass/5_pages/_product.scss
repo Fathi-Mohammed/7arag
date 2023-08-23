@@ -9,6 +9,10 @@
       color: $headingMainColor;
       font-size: 24px;
       font-weight: 600;
+
+      @include xs {
+        font-size: 16px;
+      }
     }
 
     .button__ {
@@ -40,6 +44,10 @@
     font-weight: 500;
     line-height: 1.8;
     margin-bottom: 20px;
+
+    @include xs {
+      font-size: 12px;
+    }
   }
 }
 
@@ -126,4 +134,8 @@
 
 .row_modification__ {
   align-items: center;
+
+  @include sm {
+    flex-direction: column-reverse;
+  }
 }
