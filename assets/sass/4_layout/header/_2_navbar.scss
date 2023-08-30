@@ -29,7 +29,7 @@
     // margin-inline-end: 78px;
 
     @include sm {
-          flex-wrap: wrap;
+      flex-wrap: wrap;
     }
 
     @include md {
@@ -54,7 +54,6 @@
         align-items: center;
         text-transform: capitalize;
         text-decoration: none;
-        transition: 0.5s;
         padding: 20px 0;
         position: relative;
         gap: 20px;
@@ -67,6 +66,10 @@
           width: 28px;
           height: 28px;
           flex-shrink: 0;
+
+          .img-om {
+            margin: 0 auto;
+          }
 
         }
 

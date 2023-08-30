@@ -52,6 +52,7 @@
   width: 80%;
   color: rgba(#fff, 0.8);
   font-size: 14px;
+  text-align: start;
 
   @include sm {
     text-align: center;
@@ -66,6 +67,8 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 0 !important;
+  text-align: start;
+
   
   @include sm {
     justify-content: center;
